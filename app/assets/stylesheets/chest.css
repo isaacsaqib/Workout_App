@@ -1,0 +1,53 @@
+img {
+  position: relative;
+  height: 640px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+#chest-left {
+  height: 120px;
+  width: 95px;
+  background-color: red;
+  opacity: 0;
+  position: absolute;
+  top: 117px;
+  left: 549px;
+  border-radius: 50px;
+}
+
+#chest-left:hover {
+  opacity: .6;
+
+
+}
+
+#chest-right {
+  height: 120px;
+  width: 96px;
+  background-color: red;
+  opacity: 0;
+  position: absolute;
+  top: 114px;
+  right: 551px;
+  border-radius: 50px;
+
+}
+
+#chest-right:hover {
+  opacity: .6;
+
+
+}
+
+h1#chest-text {
+
+  position: absolute;
+}
+
+
+
+
+
+

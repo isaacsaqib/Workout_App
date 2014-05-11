@@ -1,0 +1,37 @@
+#left-leg {
+
+  height: 159px;
+  width: 117px;
+  background-color: red;
+  position: absolute;
+  top: 486px;
+  left: 515px;
+  opacity: 0;
+  border-radius: 100px
+}
+
+#left-leg:hover {
+  opacity: .6
+}
+
+#right-leg {
+
+  height: 159px;
+  width: 104px;
+  background-color: red;
+  position: absolute;
+  top: 486px;
+  right: 530px;
+  opacity: 0;
+  border-radius: 100px;
+}
+
+#right-leg:hover {
+  opacity: .6
+}
+
+#leg-text {
+  position: absolute;
+
+}
+
