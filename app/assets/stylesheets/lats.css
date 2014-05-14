@@ -1,0 +1,35 @@
+#Left-Lat {
+
+  height: 129px;
+width: 65px;
+border-radius: 20px;
+background-color: red;
+position: absolute;
+left: 624px;
+top: 250px;
+-webkit-transform: rotate(-17deg);
+opacity: 0;
+}
+
+#Left-Lat:hover {
+opacity: .6;
+}
+
+
+
+#Right-Lat {
+
+  height: 129px;
+width: 65px;
+border-radius: 20px;
+background-color: red;
+position: absolute;
+right: 611px;
+top: 250px;
+-webkit-transform: rotate(13deg);
+opacity: 0;
+}
+
+#Right-Lat:hover {
+  opacity: .6;
+}

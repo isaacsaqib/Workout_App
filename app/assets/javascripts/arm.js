@@ -1,56 +1,73 @@
 $(document).ready(function(){
   $("#arm-text").hide();
   $(".arm-image").hide();
-  $("#bicep").hide();
+  $("#Bicep").hide();
+  $("#bicep-text").hide();
+  $("#Tricep").hide();
+  $("#tricep-text").hide();
+  $("#Forearm").hide();
+  $("#forearm-text").hide();
 
-  $("#left-arm").on("mouseover", function(){
-    $("#arm-text").fadeIn()
-  })
-  $("#left-arm").on("mouseleave", function(){
-    $("#arm-text").fadeOut()
-  })
 
-  $("#right-arm").on("mouseover", function(){
-    $("#arm-text").fadeIn()
-  })
-  $("#right-arm").on("mouseleave", function(){
-    $("#arm-text").fadeOut()
-  })
-
-  $("#right-arm").on("click", function(){
+  $("#Right-Arm").on("click", function(){
   $(".torso").animate({right: "400px"}, 500).fadeOut();
-  $("#chest-left").hide();
-  $("#chest-right").hide();
-  $("#left-arm").hide();
-  $("#right-arm").hide();
-  $("#left-leg").hide();
-  $("#right-leg").hide();
-  $("#abdominals").hide();
+  $("#Left-Chest").hide();
+  $("#Right-Chest").hide();
+  $("#Left-Arm").hide();
+  $("#Right-Arm").hide();
+  $("#Left-Leg").hide();
+  $("#Right-Leg").hide();
+  $("#Abdominals").hide();
   $(".arm-image").fadeIn();
-  $("#bicep").show();
-
-
+  $("#Bicep").show();
+  $("#Tricep").show();
+  $("#Forearm").show();
+   $("#rear-torso-text").hide();
   });
 
-  $("#left-arm").on("click", function(){
+ $("#Left-Arm").on("click", function(){
   $(".torso").animate({right: "400px"}, 500).fadeOut();
-  $("#chest-left").hide();
-  $("#chest-right").hide();
-  $("#left-arm").hide();
-  $("#right-arm").hide();
-  $("#left-leg").hide();
-  $("#right-leg").hide();
-  $("#abdominals").hide();
-  $(".arm-image").fadeIn()
-  $("#bicep").show();
+  $("#Left-Chest").hide();
+  $("#Right-Chest").hide();
+  $("#Left-Arm").hide();
+  $("#Right-Arm").hide();
+  $("#Left-Leg").hide();
+  $("#Right-Leg").hide();
+  $("#Abdominals").hide();
+  $(".arm-image").fadeIn();
+  $("#Bicep").show();
+  $("#Tricep").show();
+  $("#Forearm").show();
+  $("#rear-torso-text").hide();
+  });
+
+  $("#Bicep").on("click", function(){
+    $(".arm-image").animate({top: "400px"}, 500).fadeOut();
+    $("#Bicep").hide();
+    $("#Tricep").hide();
 
   });
 
-  $("#bicep").on("click", function(){
-    $(".arm-image").animate({top: "400px"}, 500).fadeOut();
-    $("#bicep").hide();
 
-  })
+
+  $("#Tricep").on("click", function(){
+    $(".arm-image").animate({top: "400px"}, 500).fadeOut();
+    $("#Bicep").hide();
+    $("#Tricep").hide();
+
+
+  });
+
+
+
+  $("#Forearm").on("click", function(){
+    $(".arm-image").animate({top: "400px"}, 500).fadeOut();
+    $("#Bicep").hide();
+    $("#Tricep").hide();
+    $("#Forearm").hide();
+
+  });
+
 
 
 

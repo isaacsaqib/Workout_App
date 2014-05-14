@@ -6,36 +6,43 @@ img {
 
 }
 
-#chest-left {
+
+#bodypart-text {
+  display: hide;
+  position: absolute;
+
+}
+
+#Left-Chest {
   height: 120px;
   width: 95px;
   background-color: red;
   opacity: 0;
   position: absolute;
   top: 117px;
-  left: 549px;
+  left: 611px;
   border-radius: 50px;
 }
 
-#chest-left:hover {
+#Left-Chest:hover {
   opacity: .6;
 
 
 }
 
-#chest-right {
+#Right-Chest {
   height: 120px;
   width: 96px;
   background-color: red;
   opacity: 0;
   position: absolute;
   top: 114px;
-  right: 551px;
+  right: 617px;
   border-radius: 50px;
 
 }
 
-#chest-right:hover {
+#Right-Chest:hover {
   opacity: .6;
 
 

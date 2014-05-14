@@ -1,42 +1,32 @@
 $(document).ready(function(){
   $("#chest-text").hide()
 
-  $("#chest-left").on("mouseover", function(){
-    $("#chest-text").fadeIn()
-  })
-  $("#chest-left").on("mouseleave", function(){
-    $("#chest-text").fadeOut()
-  })
 
-  $("#chest-right").on("mouseover", function(){
-    $("#chest-text").fadeIn()
-  })
-  $("#chest-right").on("mouseleave", function(){
-    $("#chest-text").fadeOut()
-  })
 
-  $("#chest-left").on("click", function(){
+  $("#Left-Chest").on("click", function(){
   $(".torso").animate({right: "400px"}, 500).fadeOut();
-  $("#chest-left").hide();
-  $("#chest-right").hide();
-  $("#left-arm").hide();
-  $("#right-arm").hide();
-  $("#left-leg").hide();
-  $("#right-leg").hide();
-  $("#abdominals").hide();
-
+  $("#Left-Chest").hide();
+  $("#Right-Chest").hide();
+  $("#Left-Arm").hide();
+  $("#Right-Arm").hide();
+  $("#Left-Leg").hide();
+  $("#Right-Leg").hide();
+  $("#Abdominals").hide();
+   $("#rear-torso-text").hide();
   });
 
-  $("#chest-right").on("click", function(){
-  $(".torso").animate({right: "400px"}, 500).fadeOut();
-  $("#chest-left").hide();
-  $("#chest-right").hide();
-  $("#left-arm").hide();
-  $("#right-arm").hide();
-  $("#left-leg").hide();
-  $("#right-leg").hide();
-  $("#abdominals").hide();
 
+
+  $("#Right-Chest").on("click", function(){
+  $(".torso").animate({right: "400px"}, 500).fadeOut();
+  $("#Left-Chest").hide();
+  $("#Right-Chest").hide();
+  $("#Left-Arm").hide();
+  $("#Right-Arm").hide();
+  $("#Left-Leg").hide();
+  $("#Right-Leg").hide();
+  $("#Abdominals").hide();
+   $("#rear-torso-text").hide();
   });
 
 });

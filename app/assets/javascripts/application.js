@@ -16,3 +16,40 @@
 //= require backbone
 // require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+ $(".rear-torso-image").hide();
+
+  $(".bodypart").on("mouseover", function(){
+    var id = $(this).attr("id")
+    $("#bodypart-text").text(id).fadeIn();
+
+
+
+  }).on("mouseleave", function(){
+    $("#bodypart-text").fadeOut();
+
+
+  });
+
+  $("#rear-torso-text").on("click", function(){
+    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $("#Left-Chest").hide();
+    $("#Right-Chest").hide();
+    $("#Left-Arm").hide();
+    $("#Right-Arm").hide();
+    $("#Left-Leg").hide();
+    $("#Right-Leg").hide();
+    $("#Abdominals").hide();
+    $(".rear-torso-image").fadeIn();
+    $("#rear-torso-text").hide();
+    $("#Right-Glute").show();
+    $("#Left-Glute").show();
+    $("#Right-Lat").show();
+    $("#Left-Lat").show();
+
+
+  });
+
+
+});

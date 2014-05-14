@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+
+#rear-torso-text {
+  position: absolute;
+  bottom: 70px;
+  left: 680px;
+
+}
+
+#rear-torso-text {
+  cursor: pointer;
+}
+
+.rear-torso-image {
+  position: absolute;
+  top: 0px;
+  right: 470px;
+
+}
+
+
