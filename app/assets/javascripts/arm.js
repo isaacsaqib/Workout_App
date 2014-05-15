@@ -1,12 +1,9 @@
 $(document).ready(function(){
   function getResultsBicep() {
       $.getJSON(bicepapi).done(function(data) {
-        // debugger;
         data.data.items.forEach(function(link) {
           var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-          // var newTitle = $("<p>").text(link.title);
           var video = $("<iframe>").addClass("video").attr("src", newLink).attr("width", 260).attr("height", 115).append('<br>');
-          // newTitle.appendTo("#videoContainer");
           video.appendTo("#videoContainer");
           });
      });
@@ -42,24 +39,24 @@ function getResultsForearm() {
 
 
   $("#Right-Arm").on("click", function(){
-  $(".torso").animate({right: "400px"}, 500).fadeOut();
-  $(".bodypart").hide();
-  $(".arm-image").fadeIn();
-  $("#Bicep").show();
-  $("#Tricep").show();
-  $("#Forearm").show();
-  $("#rear-torso-text").hide();
+    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $(".bodypart").hide();
+    $(".arm-image").fadeIn();
+    $("#Bicep").show();
+    $("#Tricep").show();
+    $("#Forearm").show();
+    $("#rear-torso-text").hide();
   });
 
 
  $("#Left-Arm").on("click", function(){
-  $(".torso").animate({right: "400px"}, 500).fadeOut();
-  $(".bodypart").hide();
-  $(".arm-image").fadeIn();
-  $("#Bicep").show();
-  $("#Tricep").show();
-  $("#Forearm").show();
-  $("#rear-torso-text").hide();
+    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $(".bodypart").hide();
+    $(".arm-image").fadeIn();
+    $("#Bicep").show();
+    $("#Tricep").show();
+    $("#Forearm").show();
+    $("#rear-torso-text").hide();
   });
 
   $("#Bicep").on("click", function(){
@@ -67,16 +64,7 @@ function getResultsForearm() {
     $(".bodypart").hide();
     $("#videoContainer").show();
     getResultsBicep();
-
-
-
   });
-
-  $("iframe").on("mouseover", function(){
-    $("#videoContainer").css("opacity", .4);
-
-  });
-
 
   $("#Tricep").on("click", function(){
     $(".arm-image").animate({top: "400px"}, 500).fadeOut();
@@ -84,10 +72,6 @@ function getResultsForearm() {
     $("#Tricep").hide();
     $("#videoContainer").show();
     getResultsTricep();
-
-
-
-
   });
 
   $("#Forearm").on("click", function(){
@@ -95,11 +79,6 @@ function getResultsForearm() {
     $(".bodypart").hide();
     $("#videoContainer").show();
     getResultsForearm();
-
   });
-
-
-
-
 
 });

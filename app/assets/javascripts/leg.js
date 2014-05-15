@@ -58,8 +58,6 @@ function getResultsTibialis() {
     $("#Quad").show();
     $("#rear-leg-text").fadeIn(3000);
     $("#rear-torso-text").hide();
-
-
   });
 
   $("#Left-Leg").on("click", function(){
@@ -70,7 +68,6 @@ function getResultsTibialis() {
     $("#Quad").show();
     $("#rear-leg-text").fadeIn(3000);
     $("#rear-torso-text").hide();
-
   });
 
   $("#Quad").on("click", function(){
@@ -81,45 +78,36 @@ function getResultsTibialis() {
     getResultsQuad();
   });
 
-
   $("#Tibialis").on("click", function(){
     $(".bodypart").hide();
     $(".front-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
     getResultsTibialis();
-
-
   });
 
-      $("#Hamstring").on("click", function(){
-      $(".bodypart").hide();
-      $(".rear-leg-image").animate({top: "400px"}, 500).fadeOut();
-      $("#rear-leg-text").hide();
-      $("#videoContainer").show();
-      getResultsHamstring();
-
+  $("#Hamstring").on("click", function(){
+    $(".bodypart").hide();
+    $(".rear-leg-image").animate({top: "400px"}, 500).fadeOut();
+    $("#rear-leg-text").hide();
+    $("#videoContainer").show();
+    getResultsHamstring();
   });
 
-    $("#Calve").on("click", function(){
-      $(".bodypart").hide();
-      $(".rear-leg-image").animate({top: "400px"}, 500).fadeOut();
-      $("#rear-leg-text").hide();
-      $("#videoContainer").show();
-      getResultsCalve();
-
-
-    });
-
-
+  $("#Calve").on("click", function(){
+    $(".bodypart").hide();
+    $(".rear-leg-image").animate({top: "400px"}, 500).fadeOut();
+    $("#rear-leg-text").hide();
+    $("#videoContainer").show();
+    getResultsCalve();
+  });
 
   $("#rear-leg-text").on("click", function(){
-     $(".bodypart").hide();
+    $(".bodypart").hide();
     $(".front-leg-image").animate({top: "400px"}, 500).fadeOut();
     $(".rear-leg-image").fadeIn();
     $("#Hamstring").show();
     $("#Calve").show();
   });
-
 
 });
