@@ -4,7 +4,7 @@
   width: 117px;
   background-color: red;
   position: absolute;
-  top: 486px;
+  top: 540px;
   left: 579px;
   opacity: 0;
   border-radius: 100px
@@ -20,7 +20,7 @@
   width: 104px;
   background-color: red;
   position: absolute;
-  top: 486px;
+  top: 540px;
   right: 594px;
   opacity: 0;
   border-radius: 100px;
@@ -36,9 +36,11 @@
 }
 
 .front-leg-image {
+  display: block;
+  height: 890px;
   position: absolute;
-  top: 0px;
-  right: 630px;
+  top: -40px;
+  right: 649px;
 
 }
 
@@ -48,8 +50,8 @@
   width: 93px;
   background-color: red;
   position: absolute;
-  top: 68px;
-  left: 630px;
+  top: 168px;
+  left: 674px;
   border-radius: 90px;
   opacity: 0;
   -webkit-transform: rotate(-7deg);
@@ -64,8 +66,8 @@ height: 193px;
 width: 49px;
 background-color: red;
 position: absolute;
-bottom: 208px;
-left: 673px;
+bottom: 118px;
+left: 713px;
 border-radius: 50px;
 opacity: 0;
 -webkit-transform: rotate(-5deg);
@@ -84,7 +86,7 @@ border-radius: 50px;
 background-color: red;
 opacity: 0;
 position: absolute;
-top: 20px;
+top: 90px;
 left: 669px;
 -webkit-transform: rotate(3deg);
 }
@@ -97,7 +99,7 @@ border-radius: 50px;
 background-color: red;
 opacity: 0;
 position: absolute;
-bottom: 192px;
+bottom: 122px;
 left: 687px;
 -webkit-transform: rotate(1deg);
 }
@@ -116,6 +118,7 @@ left: 687px;
 position: absolute;
 bottom: 43px;
 left: 646px;
+z-index: 1;
 }
 
 #rear-leg-text:hover {

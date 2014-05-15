@@ -4,7 +4,7 @@
   width: 60px;
   background-color: red;
   position: absolute;
-  top: 110px;
+  top: 153px;
   left: 842px;
   -webkit-transform: rotate(-8deg);
   opacity: 0;
@@ -21,8 +21,8 @@
   width: 60px;
   background-color: red;
   position: absolute;
-  top: 99px;
-  left: 515px;
+  top: 152px;
+  left: 525px;
   -webkit-transform: rotate(9deg);
   opacity: 0;
   border-radius: 50px;
@@ -32,15 +32,14 @@
   opacity: .6
 }
 
-#arm-text {
-  position: absolute;
-}
+
 
 
 .arm-image {
-  position: absolute;
-  top: 0px;
-  right: 400px;
+ position: absolute;
+top: -90px;
+right: 280px;
+height: 830px;
 
 }
 
@@ -61,10 +60,6 @@ opacity: .6;
 
 }
 
-#bicep-text {
-  position: absolute;
-
-}
 
 
 #Tricep {
@@ -84,10 +79,7 @@ opacity: .6;
 
 }
 
-#tricep-text {
-  position: absolute;
 
-}
 
 #Forearm {
 height: 180px;
@@ -106,7 +98,3 @@ opacity: .6;
 
 }
 
-#forearm-text {
-  position: absolute;
-
-}

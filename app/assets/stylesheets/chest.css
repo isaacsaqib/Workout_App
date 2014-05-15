@@ -19,10 +19,12 @@ img {
   background-color: red;
   opacity: 0;
   position: absolute;
-  top: 117px;
+  top: 177px;
   left: 611px;
   border-radius: 50px;
 }
+
+
 
 #Left-Chest:hover {
   opacity: .6;
@@ -36,7 +38,7 @@ img {
   background-color: red;
   opacity: 0;
   position: absolute;
-  top: 114px;
+  top: 174px;
   right: 617px;
   border-radius: 50px;
 
@@ -46,11 +48,6 @@ img {
   opacity: .6;
 
 
-}
-
-h1#chest-text {
-
-  position: absolute;
 }
 
 

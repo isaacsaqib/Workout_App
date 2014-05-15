@@ -14,8 +14,14 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
-// require turbolinks
-//= require_tree .
+//= require chest
+//= require arm
+//= require leg
+//= require lats
+//= require glutes
+//= require abdominals
+//= require video
+
 
 $(document).ready(function(){
  $(".rear-torso-image").hide();
@@ -26,7 +32,9 @@ $(document).ready(function(){
 
 
 
-  }).on("mouseleave", function(){
+  });
+
+  $(".bodypart").on("mouseleave", function(){
     $("#bodypart-text").fadeOut();
 
 
@@ -34,13 +42,7 @@ $(document).ready(function(){
 
   $("#rear-torso-text").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
-    $("#Left-Chest").hide();
-    $("#Right-Chest").hide();
-    $("#Left-Arm").hide();
-    $("#Right-Arm").hide();
-    $("#Left-Leg").hide();
-    $("#Right-Leg").hide();
-    $("#Abdominals").hide();
+    $(".bodypart").hide();
     $(".rear-torso-image").fadeIn();
     $("#rear-torso-text").hide();
     $("#Right-Glute").show();

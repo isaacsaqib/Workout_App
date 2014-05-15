@@ -1,83 +1,89 @@
-<h1 id="rear-leg-text"> Rear Leg </h1>
-<h1 id="rear-torso-text"> Back </h1>
-<h1 id="bodypart-text"></h1>
-<h1 id="chest-text"> Chest </h1>
-<!-- <h1 id="shoulder-text"> Shoulder </h1> -->
-<h1 id="abdominals-text"> Abdominals </h1>
-<h1 id="arm-text"> Arm </h1>
-<h1 id="leg-text"> Leg </h1>
-<h1 id="bicep-text"> Bicep </h1>
-<h1 id="tricep-text"> Tricep </h1>
-<h1 id="forearm-text"> Forearm </h1>
-<img class="rear-torso-image" src="http://i62.tinypic.com/ancxl2.png">
-<img class="torso" src="http://i57.tinypic.com/2mozb48.png">
-<img class="arm-image" src="http://i61.tinypic.com/2aktxh.png">
+<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
 
-  <img class="rear-leg-image" src="http://i59.tinypic.com/1zq33a8.png">
- <img class="front-leg-image" src="http://i57.tinypic.com/16c45e0.jpg">
+<% if logged_in? %>
+
+  <h1 id="rear-leg-text"> Rear Leg </h1>
+
+  <h1 id="bodypart-text"></h1>
+  <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
+  <%= image_tag "torsoedit2.png", :class => "torso" %>
+  <%= image_tag "armedit3.png", :class => "arm-image" %>
+  <%= image_tag "rearlegedit.png", :class => "rear-leg-image" %>
+  <%= image_tag "legedit_copy.png", :class => "front-leg-image" %>
+
+<!--  <%= image_tag "leftchest.png", :class => "leftchest"%>
+ -->
+
+
+
+
+  <!-- Left chest -->
   <div class="bodypart" id="Left-Chest">
   </div>
-
-
+  <!-- Right chest -->
   <div class="bodypart" id="Right-Chest">
   </div>
-
-
-
-  <!-- Shoulder Divs  -->
-  <<!-- div id="shoulder-left">
-  </div>
-
-  <div id="shoulder-right">
-  </div> -->
-
+  <!-- Abs -->
   <div class="bodypart" id="Abdominals">
   </div>
-
+  <!-- Right arm -->
   <div class="bodypart" id="Right-Arm">
   </div>
-
-
+  <!-- Left arm -->
   <div class="bodypart" id="Left-Arm">
   </div>
-
+  <!-- Left leg -->
   <div class="bodypart" id="Left-Leg">
   </div>
-
+  <!-- Right leg -->
   <div class="bodypart" id="Right-Leg">
   </div>
-
+  <!-- Bicep -->
   <div class="bodypart" id="Bicep">
   </div>
-
+  <!-- Tricep -->
   <div class="bodypart" id="Tricep">
   </div>
-
+  <!-- Forearm -->
   <div class="bodypart" id="Forearm">
   </div>
-
+  <!-- Quad -->
   <div class="bodypart" id="Quad">
   </div>
-
+  <!-- Tibialis -->
   <div class="bodypart" id="Tibialis">
   </div>
-
+  <!-- Hamstring -->
   <div class="bodypart" id="Hamstring">
   </div>
-
-
+  <!-- Calve -->
   <div class="bodypart" id="Calve">
   </div>
-
+  <!-- Right glute -->
   <div class="bodypart" id="Right-Glute">
   </div>
-
-
+  <!-- Left glute  -->
   <div class="bodypart" id="Left-Glute">
   </div>
-
- <div class="bodypart" id="Left-Lat">
+  <!-- Left lat -->
+  <div class="bodypart" id="Left-Lat">
   </div>
-
+  <!-- Right lat -->
   <div class="bodypart" id="Right-Lat">
   </div>
+
+<h1 id="rear-torso-text"> Back </h1>
+
+
+  <div id="videoContainer">
+  </div>
+<a href="/logout"> Logout</a>
+
+<% else %>
+
+  <%= link_to("Sign up", new_user_path) %>
+
+  <%= link_to("Login", session_new_path) %>
+
+<% end %>
+

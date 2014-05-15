@@ -13,17 +13,26 @@
  *= require_tree .
  *= require_self
  */
-
-
-#rear-torso-text {
-  position: absolute;
-  bottom: 70px;
-  left: 680px;
-
+body {
+  background-image: url("http://www.360fitness-studio.com/images/BackgroundSized.png");
 }
+
+#logo {
+  font-family: 'Frijole', cursive;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  margin: 0;
+}
+
+
 
 #rear-torso-text {
   cursor: pointer;
+  font-family: 'Frijole', cursive;
+  color: white;
+  font-size: 45px;
+  text-align: center;
 }
 
 .rear-torso-image {
@@ -31,6 +40,11 @@
   top: 0px;
   right: 470px;
 
+}
+
+#bodypart-text {
+  color: white;
+  z-index: 1;
 }
 
 
