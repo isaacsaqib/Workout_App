@@ -15,6 +15,8 @@
 //= require underscore
 //= require backbone
 
+//= require youtube
+
 //= require chest
 //= require arm
 //= require leg

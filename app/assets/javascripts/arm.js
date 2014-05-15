@@ -1,36 +1,4 @@
 $(document).ready(function(){
-  function getResultsBicep() {
-      $.getJSON(bicepapi).done(function(data) {
-        data.data.items.forEach(function(link) {
-          var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-          var video = $("<iframe>").addClass("video").attr("src", newLink).attr("width", 260).attr("height", 115).append('<br>');
-          video.appendTo("#videoContainer");
-          });
-     });
-    }
-  var bicepapi = "http://gdata.youtube.com/feeds/api/videos/?v=2&alt=jsonc&q=bicep%20workout&max-results=10";
-
-function getResultsForearm() {
-      $.getJSON(forearmapi).done(function(data) {
-        data.data.items.forEach(function(link) {
-          var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-          $("<iframe>").attr("src", newLink).attr("width", 260).attr("height", 115).appendTo("#videoContainer");
-          });
-     });
-    }
-  var forearmapi = "http://gdata.youtube.com/feeds/api/videos/?v=2&alt=jsonc&q=forearm%20workout&max-results=4";
-
-  function getResultsTricep() {
-      $.getJSON(tricepapi).done(function(data) {
-        data.data.items.forEach(function(link) {
-          var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-          $("<iframe>").attr("src", newLink).attr("width", 260).attr("height", 115).appendTo("#videoContainer");
-          });
-     });
-    }
-  var tricepapi = "http://gdata.youtube.com/feeds/api/videos/?v=2&alt=jsonc&q=tricep%20workout&max-results=4";
-
-
   $("#videoContainer").hide();
   $(".arm-image").hide();
   $("#Bicep").hide();
@@ -63,7 +31,7 @@ function getResultsForearm() {
     $(".arm-image").animate({top: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
     $("#videoContainer").show();
-    getResultsBicep();
+    getAndAppendVideoIframes("bicep workout", $("#videoContainer"));
   });
 
   $("#Tricep").on("click", function(){
@@ -71,14 +39,14 @@ function getResultsForearm() {
     $("#Bicep").hide();
     $("#Tricep").hide();
     $("#videoContainer").show();
-    getResultsTricep();
+    getAndAppendVideoIframes("tricep workout", $("#videoContainer"));
   });
 
   $("#Forearm").on("click", function(){
     $(".arm-image").animate({top: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
     $("#videoContainer").show();
-    getResultsForearm();
+    getAndAppendVideoIframes("forearm workout", $("#videoContainer"));
   });
 
 });

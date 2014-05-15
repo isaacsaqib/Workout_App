@@ -10,46 +10,6 @@ $(document).ready(function(){
   $("#videoContainer").hide();
 
 
-function getResultsQuad() {
-      $.getJSON(quadapi).done(function(data) {
-        data.data.items.forEach(function(link) {
-          var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-          $("<iframe>").attr("src", newLink).attr("width", 260).attr("height", 115).appendTo("#videoContainer");
-          });
-     });
-    }
-  var quadapi = "http://gdata.youtube.com/feeds/api/videos/?v=2&alt=jsonc&q=quad%20workout&max-results=4";
-
-function getResultsTibialis() {
-      $.getJSON(tibialisapi).done(function(data) {
-        data.data.items.forEach(function(link) {
-          var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-          $("<iframe>").attr("src", newLink).attr("width", 260).attr("height", 115).appendTo("#videoContainer");
-          });
-     });
-    }
-  var tibialisapi = "http://gdata.youtube.com/feeds/api/videos/?v=2&alt=jsonc&q=tibialis%20workout&max-results=4";
-
-  function getResultsCalve() {
-      $.getJSON(calveapi).done(function(data) {
-        data.data.items.forEach(function(link) {
-          var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-          $("<iframe>").attr("src", newLink).attr("width", 260).attr("height", 115).appendTo("#videoContainer");
-          });
-     });
-    }
-  var calveapi = "http://gdata.youtube.com/feeds/api/videos/?v=2&alt=jsonc&q=calve%20workout&max-results=4";
-
- function getResultsHamstring() {
-      $.getJSON(hamstringapi).done(function(data) {
-        data.data.items.forEach(function(link) {
-          var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-          $("<iframe>").attr("src", newLink).attr("width", 260).attr("height", 115).appendTo("#videoContainer");
-          });
-     });
-    }
-  var hamstringapi = "http://gdata.youtube.com/feeds/api/videos/?v=2&alt=jsonc&q=hamstring%20workout&max-results=4";
-
   $("#Right-Leg").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
@@ -75,7 +35,7 @@ function getResultsTibialis() {
     $(".front-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
-    getResultsQuad();
+    getAndAppendVideoIframes("quad workout", $("#videoContainer"));
   });
 
   $("#Tibialis").on("click", function(){
@@ -83,7 +43,7 @@ function getResultsTibialis() {
     $(".front-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
-    getResultsTibialis();
+    getAndAppendVideoIframes("tibialis workout", $("#videoContainer"));
   });
 
   $("#Hamstring").on("click", function(){
@@ -91,7 +51,7 @@ function getResultsTibialis() {
     $(".rear-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
-    getResultsHamstring();
+    getAndAppendVideoIframes("hamstring workout", $("#videoContainer"));
   });
 
   $("#Calve").on("click", function(){
@@ -99,7 +59,7 @@ function getResultsTibialis() {
     $(".rear-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
-    getResultsCalve();
+    getAndAppendVideoIframes("calve workout", $("#videoContainer"));
   });
 
   $("#rear-leg-text").on("click", function(){
