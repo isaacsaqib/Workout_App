@@ -14,30 +14,24 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+
 //= require chest
 //= require arm
 //= require leg
 //= require lats
 //= require glutes
 //= require abdominals
-//= require video
-
 
 $(document).ready(function(){
- $(".rear-torso-image").hide();
+  $(".rear-torso-image").hide();
 
   $(".bodypart").on("mouseover", function(){
     var id = $(this).attr("id")
     $("#bodypart-text").text(id).fadeIn();
-
-
-
   });
 
   $(".bodypart").on("mouseleave", function(){
     $("#bodypart-text").fadeOut();
-
-
   });
 
   $("#rear-torso-text").on("click", function(){
@@ -49,9 +43,5 @@ $(document).ready(function(){
     $("#Left-Glute").show();
     $("#Right-Lat").show();
     $("#Left-Lat").show();
-
-
   });
-
-
 });
