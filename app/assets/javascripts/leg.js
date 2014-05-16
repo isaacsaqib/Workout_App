@@ -13,20 +13,20 @@ $(document).ready(function(){
   $("#Right-Leg").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
-    $(".front-leg-image").fadeIn(3000);
+    $(".front-leg-image").fadeIn();
     $("#Tibialis").show();
     $("#Quad").show();
-    $("#rear-leg-text").fadeIn(3000);
+    $("#rear-leg-text").show();
     $("#rear-torso-text").hide();
   });
 
   $("#Left-Leg").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
-    $(".front-leg-image").fadeIn(3000);
+    $(".front-leg-image").fadeIn();
     $("#Tibialis").show();
     $("#Quad").show();
-    $("#rear-leg-text").fadeIn(3000);
+    $("#rear-leg-text").show();
     $("#rear-torso-text").hide();
   });
 
@@ -68,6 +68,7 @@ $(document).ready(function(){
     $(".rear-leg-image").fadeIn();
     $("#Hamstring").show();
     $("#Calve").show();
+    $("#rear-leg-text").hide();
   });
 
 });

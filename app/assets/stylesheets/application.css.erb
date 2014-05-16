@@ -13,8 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
 body {
   background-image: url("http://www.360fitness-studio.com/images/BackgroundSized.png");
+  margin: 0px;
 }
 
 #logo {
@@ -25,19 +27,23 @@ body {
   margin: 0;
 }
 
-
-
 #rear-torso-text {
   cursor: pointer;
+
+}
+
+.rear {
   font-family: 'Frijole', cursive;
   color: white;
   font-size: 45px;
   text-align: center;
+
 }
+
 
 .rear-torso-image {
   position: absolute;
-  top: 0px;
+  top: 100px;
   right: 470px;
 
 }
@@ -47,4 +53,48 @@ body {
   z-index: 1;
 }
 
+#banner {
+  height: 96px;
+  width: 1425px;
+  background-color: black;
+  opacity: .3;
+  z-index: -2;
+  position: absolute;
+  top: 0px;
 
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 10 px;
+  font-size: 20px;
+  font-family: 'Frijole', cursive;
+}
+
+#sign-up-form {
+  color: white;
+  font-size: 20px;
+  font-family: 'Frijole', cursive;
+}
+
+#login-form {
+  color: white;
+  font-size: 20px;
+  font-family: 'Frijole', cursive;
+}
+
+#logout {
+  text-align: left;
+  position: absolute;
+  left: 10px;
+}
+
+#home {
+text-align: right;
+position: absolute;
+right: 10px;
+
+}

@@ -5,7 +5,7 @@
   background-color: red;
   position: absolute;
   left: 624px;
-  top: 250px;
+  top: 340px;
   -webkit-transform: rotate(-17deg);
   opacity: 0;
 }
@@ -23,7 +23,7 @@
   background-color: red;
   position: absolute;
   right: 611px;
-  top: 250px;
+  top: 340px;
   -webkit-transform: rotate(13deg);
   opacity: 0;
 }

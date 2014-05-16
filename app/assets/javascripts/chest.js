@@ -15,8 +15,9 @@ $(document).ready(function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
     $("#rear-torso-text").hide();
-    getResultsChest();
     $("#videoContainer").show();
+    getAndAppendVideoIframes("chest workout", $("#videoContainer"));
+
   });
 
 });

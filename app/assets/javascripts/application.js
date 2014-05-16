@@ -14,15 +14,16 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
-
+//= require signup
+//= require login
 //= require youtube
-
 //= require chest
 //= require arm
 //= require leg
 //= require lats
 //= require glutes
 //= require abdominals
+
 
 $(document).ready(function(){
   $(".rear-torso-image").hide();

@@ -12,7 +12,7 @@ var SEARCH_URL = "http://gdata.youtube.com/feeds/api/videos/";
 var defaultOptions = {
   "v": 2,
   "alt": "jsonc",
-  "max-results": 4
+  "max-results": 8
 };
 
 function getAndAppendVideoIframes(searchTerm, element) {

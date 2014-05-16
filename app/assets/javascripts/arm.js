@@ -4,7 +4,7 @@ $(document).ready(function(){
   $("#Bicep").hide();
   $("#Tricep").hide();
   $("#Forearm").hide();
-
+  $("#Shoulder").hide();
 
   $("#Right-Arm").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
@@ -13,6 +13,7 @@ $(document).ready(function(){
     $("#Bicep").show();
     $("#Tricep").show();
     $("#Forearm").show();
+    $("#Shoulder").show();
     $("#rear-torso-text").hide();
   });
 
@@ -24,6 +25,7 @@ $(document).ready(function(){
     $("#Bicep").show();
     $("#Tricep").show();
     $("#Forearm").show();
+    $("#Shoulder").show();
     $("#rear-torso-text").hide();
   });
 
@@ -48,5 +50,13 @@ $(document).ready(function(){
     $("#videoContainer").show();
     getAndAppendVideoIframes("forearm workout", $("#videoContainer"));
   });
+
+  $("#Shoulder").on("click", function(){
+      $(".arm-image").animate({top: "400px"}, 500).fadeOut();
+      $(".bodypart").hide();
+      $("#videoContainer").show();
+      getAndAppendVideoIframes("shoulder workout", $("#videoContainer"));
+  });
+
 
 });
