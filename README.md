@@ -27,6 +27,5 @@ Things you may want to cover:
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
-[Pivotal Tracker](https://www.pivotaltracker.com/s/projects/1048022)
-[ERD](https://github.com/isaacsaqib/Outfitter-/blob/master/erd.pdf)
-[Heroku](http://intense-stream-2912.herokuapp.com/)
+[Pivotal Tracker](https://www.pivotaltracker.com/s/projects/1077206)
+[Heroku](workmeout.herokuapp.com)
