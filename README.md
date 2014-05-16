@@ -28,4 +28,4 @@ Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
 [Pivotal Tracker](https://www.pivotaltracker.com/s/projects/1077206)
-[Heroku](workmeout.herokuapp.com)
+[Heroku](http://workmeout.herokuapp.com)
