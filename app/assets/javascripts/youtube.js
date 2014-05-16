@@ -25,7 +25,7 @@ function getAndAppendVideoIframes(searchTerm, element) {
   $.getJSON(SEARCH_URL, data).done(function(data) {
     data.data.items.forEach(function(link) {
       var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", "");
-      var iframe = $("<iframe>").attr("src", newLink).attr("width", 260).attr("height", 115);
+      var iframe = $("<iframe>").attr("src", newLink).attr("width", 360).attr("height", 215);
       element.append(iframe);
     });
   });
