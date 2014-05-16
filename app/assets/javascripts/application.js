@@ -26,6 +26,10 @@
 
 
 $(document).ready(function(){
+
+  $("#Left-Chest").css('left', window.innerWidth/2 - 112);
+  $("#Right-Chest").css('left', window.innerWidth/2 + 10);
+
   $(".rear-torso-image").hide();
 
   $(".bodypart").on("mouseover", function(){
@@ -50,4 +54,5 @@ $(document).ready(function(){
     $("#Rhomboids").show();
     $("#Trapezius").show();
   });
+
 });
