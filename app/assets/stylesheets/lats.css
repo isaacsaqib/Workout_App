@@ -31,3 +31,56 @@
 #Right-Lat:hover {
   opacity: .6;
 }
+
+
+#Lower-Back {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 241px;
+  right: 659px;
+  background-color: red;
+  opacity: 0;
+  border-radius: 41px;
+}
+
+#Lower-Back:hover {
+  opacity: .6;
+
+}
+
+#Rhomboids {
+  width: 0;
+  height: 0;
+  border-left: 76px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 133px solid red;
+  position: absolute;
+  top: 310px;
+  left: 650px;
+  border-radius: 20px;
+  opacity: 0;
+
+}
+
+#Rhomboids:hover {
+  opacity: .6;
+
+}
+
+#Trapezius {
+  height: 50px;
+  width: 160px;
+  opacity: 0;
+  background-color: red;
+  position: absolute;
+  top: 250px;
+  right: 640px;
+  border-radius: 30px;
+
+}
+
+#Trapezius:hover {
+  opacity: .6;
+}
+

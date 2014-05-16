@@ -46,5 +46,8 @@ $(document).ready(function(){
     $("#Left-Glute").show();
     $("#Right-Lat").show();
     $("#Left-Lat").show();
+    $("#Lower-Back").show();
+    $("#Rhomboids").show();
+    $("#Trapezius").show();
   });
 });
