@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
   $("#Right-Leg").on("click", function(){
-    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $(".torso").animate({top: "400px"}, 500).fadeOut(4000);
     $(".bodypart").hide();
     $(".front-leg-image").fadeIn();
     $("#Tibialis").show();
@@ -21,7 +21,7 @@ $(document).ready(function(){
   });
 
   $("#Left-Leg").on("click", function(){
-    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $(".torso").animate({top: "400px"}, 500).fadeOut(4000);
     $(".bodypart").hide();
     $(".front-leg-image").fadeIn();
     $("#Tibialis").show();

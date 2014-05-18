@@ -61,4 +61,10 @@ $(document).ready(function(){
     $("#Trapezius").show();
   });
 
+  $(".bodypart").on("click", function(){
+    $("#info").fadeOut();
+    $("#contactinfo").fadeOut();
+
+  });
+
 });

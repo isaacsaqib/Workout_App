@@ -7,9 +7,10 @@ $(document).ready(function(){
   $("#Shoulder").hide();
 
   $("#Right-Arm").on("click", function(){
-    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $(".arm-image").css("z-index", "-1").fadeIn();
+    $(".torso").animate({top: "400px"}, 500).fadeOut(4000);
     $(".bodypart").hide();
-    $(".arm-image").fadeIn();
+
     $("#Bicep").show();
     $("#Tricep").show();
     $("#Forearm").show();
@@ -19,7 +20,7 @@ $(document).ready(function(){
 
 
  $("#Left-Arm").on("click", function(){
-    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $(".torso").animate({top: "400px"}, 500).fadeOut(4000);
     $(".bodypart").hide();
     $(".arm-image").fadeIn();
     $("#Bicep").show();
