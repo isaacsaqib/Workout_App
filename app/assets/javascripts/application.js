@@ -30,6 +30,11 @@ $(document).ready(function(){
   $("#Left-Chest").css('left', window.innerWidth/2 - 112);
   $("#Right-Chest").css('left', window.innerWidth/2 + 10);
   $("#Left-Arm").css('left', window.innerWidth/2 - 190);
+  $("#Right-Arm").css('right', window.innerWidth/2 - 190);
+  $("#Right-Leg").css('right', window.innerWidth/2 - 120);
+  $("#Left-Leg").css('left', window.innerWidth/2 - 140);
+
+  $("#Abdominals").css('left', window.innerWidth/2 - 60);
 
   $(".rear-torso-image").hide();
 
