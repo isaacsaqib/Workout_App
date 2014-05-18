@@ -29,6 +29,7 @@ $(document).ready(function(){
 
   $("#Left-Chest").css('left', window.innerWidth/2 - 112);
   $("#Right-Chest").css('left', window.innerWidth/2 + 10);
+   $("#Left-Arm").css('left', window.innerWidth/2 - 190);
 
   $(".rear-torso-image").hide();
 
