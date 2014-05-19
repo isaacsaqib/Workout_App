@@ -59,6 +59,8 @@ $(document).ready(function(){
     $("#Lower-Back").show();
     $("#Rhomboids").show();
     $("#Trapezius").show();
+    $("#info").fadeOut();
+    $("#contactinfo").fadeOut();
   });
 
   $(".bodypart").on("click", function(){

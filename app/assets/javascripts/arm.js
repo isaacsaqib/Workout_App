@@ -7,8 +7,8 @@ $(document).ready(function(){
   $("#Shoulder").hide();
 
   $("#Right-Arm").on("click", function(){
-    $(".arm-image").css("z-index", "-1").fadeIn();
-    $(".torso").animate({top: "400px"}, 500).fadeOut(4000);
+    $(".arm-image").fadeIn();
+    $(".torso").css("position", "absolute").css("top", "100px").css("left", "500px").animate({left: "200px"}, 500).fadeOut();
     $(".bodypart").hide();
 
     $("#Bicep").show();
@@ -20,9 +20,9 @@ $(document).ready(function(){
 
 
  $("#Left-Arm").on("click", function(){
-    $(".torso").animate({top: "400px"}, 500).fadeOut(4000);
-    $(".bodypart").hide();
     $(".arm-image").fadeIn();
+    $(".torso").css("position", "absolute").css("top", "100px").css("left", "500px").animate({left: "200px"}, 500).fadeOut();
+    $(".bodypart").hide();
     $("#Bicep").show();
     $("#Tricep").show();
     $("#Forearm").show();
