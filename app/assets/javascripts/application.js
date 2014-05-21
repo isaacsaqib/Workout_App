@@ -33,6 +33,11 @@ $(document).ready(function(){
   $("#Right-Arm").css('right', window.innerWidth/2 - 190);
   $("#Right-Leg").css('right', window.innerWidth/2 - 120);
   $("#Left-Leg").css('left', window.innerWidth/2 - 140);
+  $("#Tricep").css('left', window.innerWidth/2 - 50);
+  $("#Bicep").css('right', window.innerWidth/2 - 30);
+  $("#Forearm").css('left', window.innerWidth/2 - 40);
+  $("#Shoulder").css('left', window.innerWidth/2 - 60);
+
 
   $("#Abdominals").css('left', window.innerWidth/2 - 60);
 

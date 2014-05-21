@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
   $("#Left-Chest").on("click", function(){
-    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $(".torso").css("position", "absolute").css("top", "100px").css("left", "400px").animate({left: "900px"}, 500).fadeOut();
     $(".bodypart").hide();
     $("#rear-torso-text").hide();
     getAndAppendVideoIframes("chest workout", $("#videoContainer"));
@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
   $("#Right-Chest").on("click", function(){
-    $(".torso").animate({right: "400px"}, 500).fadeOut();
+    $(".torso").css("position", "absolute").css("top", "100px").css("left", "400px").animate({left: "900px"}, 500).fadeOut();
     $(".bodypart").hide();
     $("#rear-torso-text").hide();
     $("#videoContainer").show();

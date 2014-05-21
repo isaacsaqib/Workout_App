@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   $("#Right-Arm").on("click", function(){
     $(".arm-image").fadeIn();
-    $(".torso").css("position", "absolute").css("top", "100px").css("left", "500px").animate({left: "200px"}, 500).fadeOut();
+    $(".torso").css("position", "absolute").css("top", "100px").css("left", "400px").animate({left: "900px"}, 500).fadeOut();
     $(".bodypart").hide();
 
     $("#Bicep").show();
@@ -21,7 +21,7 @@ $(document).ready(function(){
 
  $("#Left-Arm").on("click", function(){
     $(".arm-image").fadeIn();
-    $(".torso").css("position", "absolute").css("top", "100px").css("left", "500px").animate({left: "200px"}, 500).fadeOut();
+    $(".torso").css("position", "absolute").css("top", "100px").css("left", "400px").animate({left: "900px"}, 500).fadeOut();
     $(".bodypart").hide();
     $("#Bicep").show();
     $("#Tricep").show();
