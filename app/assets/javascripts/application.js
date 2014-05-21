@@ -37,6 +37,13 @@ $(document).ready(function(){
   $("#Bicep").css('right', window.innerWidth/2 - 30);
   $("#Forearm").css('left', window.innerWidth/2 - 40);
   $("#Shoulder").css('left', window.innerWidth/2 - 60);
+  $("#Left-Glute").css('left', window.innerWidth/2 - 90);
+  $("#Right-Glute").css('right', window.innerWidth/2 - 120);
+  $("#Lower-Back").css('right', window.innerWidth/2 - 65);
+  $("#Right-Lat").css('right', window.innerWidth/2 - 105);
+  $("#Left-Lat").css('left', window.innerWidth/2 - 90);
+  $("#Rhomboids").css('left', window.innerWidth/2 - 66);
+  $("#Trapezius").css('left', window.innerWidth/2 - 80);
 
 
   $("#Abdominals").css('left', window.innerWidth/2 - 60);
