@@ -13,6 +13,18 @@ class UsersController < ApplicationController
       end
   end
 
+  def show
+    @user = User.find_by(id: params[:id])
+    @users_workouts = @user.workouts
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => @users_workouts}
+    end
+
+  end
+
+
   private
 
   def user_params

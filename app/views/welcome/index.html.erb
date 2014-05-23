@@ -4,10 +4,11 @@
 </div>
 
 <h1 id="logo"> WorkMeOut </h1>
-<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'> -->
 
 
 <% if logged_in? %>
+<a class="links" id="workouts" href="/workouts"> Workouts </a>
 <a class="links" id="logout" href="/logout"> Logout</a>
 <a class="links" id="home" href="/"> Home </a>
   <h1 id="bodypart-text"></h1>
@@ -120,45 +121,48 @@
 <% else %>
 
   <a class="links" id="signuplink" href="/users/new"> Sign up </a>
+    <a class="links" id="login-link" href="/session/new"> Log In </a>
 
 <% @user.errors.messages.each do |attr, message| %>
   <p>error on <%= attr %><%= message %></p>
 <% end %>
 
 
-<div id="sign-up-form">
-  <%= form_for(@user) do |f| %>
-    <%= f.label(:name) %>
-      <%= f.text_field(:name) %>
-      <br>
-    <%= f.label(:email) %>
-      <%= f.text_field(:email) %>
-          <br>
 
-    <%= f.label(:password) %>
-      <%= f.password_field(:password) %>
-          <br>
+<div id="form-container">
+  <div id="sign-up-form">
+    <%= form_for(@user) do |f| %>
+      <%= f.label(:name) %>
+        <%= f.text_field(:name) %>
+        <br>
+      <%= f.label(:email) %>
+        <%= f.text_field(:email) %>
+            <br>
 
-    <%= f.label(:password_confirmation) %>
-      <%= f.password_field(:password_confirmation) %>
-          <br>
+      <%= f.label(:password) %>
+        <%= f.password_field(:password) %>
+            <br>
 
-    <%= f.submit %>
-  <% end %>
-</div>
+      <%= f.label(:password_confirmation) %>
+        <%= f.password_field(:password_confirmation) %>
+            <br>
 
-  <a class="links" id="login-link" href="/session/new"> Log In </a>
+      <%= f.submit %>
+    <% end %>
+  </div>
 
+<br>
 
-<div id="login-form">
-    <%= form_tag("/session", method: "post") do %>
-      <%= label_tag(:email) %>
-      <%= text_field_tag(:email) %>
-      <%= label_tag(:password) %>
-      <%= password_field_tag(:password) %>
-      <%= submit_tag("Login") %>
-      <% end %>
-  <% end %>
+  <div id="login-form">
+      <%= form_tag("/session", method: "post") do %>
+        <%= label_tag(:email) %>
+        <%= text_field_tag(:email) %><br>
+        <%= label_tag(:password) %>
+        <%= password_field_tag(:password) %>
+        <%= submit_tag("Login") %>
+        <% end %>
+    <% end %>
+  </div>
 </div>
 <footer id="footer">
 

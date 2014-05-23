@@ -26,6 +26,8 @@
 
 
 $(document).ready(function(){
+  $("#form-container").hide();
+
 
   $("#Left-Chest").css('left', window.innerWidth/2 - 112);
   $("#Right-Chest").css('left', window.innerWidth/2 + 10);
@@ -80,5 +82,14 @@ $(document).ready(function(){
     $("#contactinfo").fadeOut();
 
   });
+
+
+  $("button").on("click", function(){
+    $(this).hide();
+
+  });
+
+
+
 
 });

@@ -3,7 +3,9 @@ $(document).ready(function(){
 
   $("#signuplink").on("click", function(event){
     event.preventDefault();
-    $("#sign-up-form").slideDown();
+    $("#form-container").fadeIn();
+    $("#sign-up-form").slideDown(1000);
+
 
   })
 
