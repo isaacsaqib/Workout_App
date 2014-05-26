@@ -28,6 +28,8 @@
 $(document).ready(function(){
   $("#form-container").hide();
 
+  $(".bodypart").css("top", "+=" + 50);
+  $(".bodypart").css("bottom", "-=" + 50);
 
   $("#Left-Chest").css('left', window.innerWidth/2 - 112);
   $("#Right-Chest").css('left', window.innerWidth/2 + 10);
@@ -93,3 +95,6 @@ $(document).ready(function(){
 
 
 });
+
+
+// $(".bodypart").css("opacity", .6).css("top", "+=" 50)  USE THIS TO ADJUST NEW POSITIONS
