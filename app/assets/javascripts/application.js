@@ -97,4 +97,3 @@ $(document).ready(function(){
 });
 
 
-// $(".bodypart").css("opacity", .6).css("top", "+=" 50)  USE THIS TO ADJUST NEW POSITIONS
