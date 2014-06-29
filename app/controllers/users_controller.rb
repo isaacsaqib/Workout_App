@@ -7,9 +7,12 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
        if @user.save
+        session[:user_id] = @user.id
+        flash[:created] = "Account Created"
         redirect_to("/")
       else
-        render :new
+        redirect_to("/")
+        flash[:create_error] = "Something Went Wrong"
       end
   end
 

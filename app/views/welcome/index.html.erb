@@ -123,11 +123,6 @@
   <a class="links" id="signuplink" href="/users/new"> Sign up </a>
     <a class="links" id="login-link" href="/session/new"> Log In </a>
 
-<% @user.errors.messages.each do |attr, message| %>
-  <p>error on <%= attr %><%= message %></p>
-<% end %>
-
-
 
 <div id="form-container">
   <div id="sign-up-form">
@@ -163,6 +158,12 @@
         <% end %>
     <% end %>
   </div>
+
+
+<% flash.each do |key, value| %>
+  <div class="flash"><%= value %><br></div>
+<% end %>
+
 </div>
 <footer id="footer">
 

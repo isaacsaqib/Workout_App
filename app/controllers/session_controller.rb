@@ -12,8 +12,8 @@ class SessionController < ApplicationController
       session[:user_id] = user.id
       redirect_to("/")
     else
-      # rerender the login form
-      render(:new)
+      redirect_to("/")
+      flash[:messages] = "Bad"
     end
   end
 
