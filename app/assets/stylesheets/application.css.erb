@@ -13,21 +13,33 @@
  *= require_tree .
  *= require_self
  */
-
+@font-face {
+  font-family: Ultimate-Midnight;
+  src: url("/assets/dude.ttf") format("truetype");
+}
 body {
-  background-image: url("cage_background.jpg") ;
+  background-image: url("http://www.crossfiteastdecatur.com/wp-content/uploads/2013/12/CBC.jpg") ;
   /*background-repeat: none;*/
   background-repeat: no-repeat;
   background-size: cover;
   /*background-position: center;*/
+  margin: 0px;
+  position: relative;
+}
+
+header {
+  background-color: black;
+  margin: 0px;
+
 }
 
 #logo {
   font-family: 'Frijole', cursive;
   color: white;
-  text-align: center;
-  font-size: 45px;
-  margin: 0;
+  text-align: left;
+  /*font-size: 45px;*/
+  margin:0px;
+  margin-left: 15px;
 }
 
 #rear-torso-text {
@@ -171,4 +183,59 @@ right: 10px;
 .flash {
   background-color: white;
 
+}
+
+.forms {
+  text-align: center;
+  vertical-align: middle;
+  list-style: none;
+
+}
+
+.forms label {
+  text-align: left;
+  padding: 0px 0px 3px 3px;
+}
+
+
+.forms input {
+  border: 2px solid red;
+}
+
+
+.buttons {
+  color: white;
+  /*padding: 0px 10px 10px 10px;*/
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 0, 0, 1)), color-stop(0.49, rgba(255, 0, 0, 0.4)), color-stop(0.51, rgba(255, 0, 0, .5)), to(rgba(255, 0, 0, 0.7))); /* Chrome,Safari4+ */
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  -webkit-border-radius: 5px;
+  /*box-shadow: 10px 10px 10px black;*/
+  -webkit-box-shadow: 1px 13px 33px rgba(0, 0, 0, 1);
+  text-decoration: none;
+  text-align: left;
+
+}
+
+.text-field {
+  font-size: 40px;
+}
+
+
+#info-box {
+  background-color: rgba(255, 255, 255, .6);
+  height: 200px;
+  width: 600px;
+  box-shadow: 1px 13px 33px black;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding:20px;
+}
+
+#info-box h1 {
+    font-family: Ultimate-Midnight;
+
+  /*color: white;*/
+  /*text-align: center;*/
+  /*margin-top: 10px;*/
 }

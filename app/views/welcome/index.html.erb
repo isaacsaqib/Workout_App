@@ -3,43 +3,52 @@
 
 </div> -->
 
-<h1 id="logo"> WorkMeOut </h1>
-<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
+<html>
+<head>
+  <title>WorkMeOut</title>
+  <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <h1 id="logo"> WorkMeOut </h1>
+
+  </header>
 
 
-<% if logged_in? %>
-<a class="links" id="workouts" href="/workouts"> Workouts </a>
-<a class="links" id="logout" href="/logout"> Logout</a>
-<a class="links" id="home" href="/"> Home </a>
-  <h1 id="bodypart-text"></h1>
-  <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
+  <% if logged_in? %>
+  <a class="links" id="workouts" href="/workouts"> Workouts </a>
+  <a class="links" id="logout" href="/logout"> Logout</a>
+  <a class="links" id="home" href="/"> Home </a>
+    <h1 id="bodypart-text"></h1>
+    <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
 
-  <%= image_tag "armedit3.png", :class => "arm-image" %>
-  <%= image_tag "rearlegedit.png", :class => "rear-leg-image" %>
-  <%= image_tag "frontleg.png", :class => "front-leg-image" %>
+    <%= image_tag "armedit3.png", :class => "arm-image" %>
+    <%= image_tag "rearlegedit.png", :class => "rear-leg-image" %>
+    <%= image_tag "frontleg.png", :class => "front-leg-image" %>
 
-<!--  <%= image_tag "leftchest.png", :class => "leftchest"%>
- -->
-<!-- <div id="info">
-  <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> What we provide </h1>
-    <p style="color: red; text-align: center; font-family: 'Frijole'"> An innovative and efficient way for the user to learn about exercises </p>
-    <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> How to use?</h1>
-       <p style="color: red; text-align: center; font-family: 'Frijole'"> -Simply hover over the desired body part you wish to work out <br><br> -  Click on that body part<br><br> -Watch and Learn</p>
-</div>
- -->
+  <!--  <%= image_tag "leftchest.png", :class => "leftchest"%>
+   -->
+  <!-- <div id="info">
+    <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> What we provide </h1>
+      <p style="color: red; text-align: center; font-family: 'Frijole'"> An innovative and efficient way for the user to learn about exercises </p>
+      <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> How to use?</h1>
+         <p style="color: red; text-align: center; font-family: 'Frijole'"> -Simply hover over the desired body part you wish to work out <br><br> -  Click on that body part<br><br> -Watch and Learn</p>
+  </div>
+   -->
 
-<<!-- div id="contactinfo">
-    <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> Contact </h1>
-        <p style="color: red; text-align: center; font-family: 'Frijole'"> Email: Isaac.Saqib@stonybrook.edu </p>
-        <p style="color: red; text-align: center; font-family: 'Frijole'">
-          <a style="text-decoration: none; color: red; text-align: center; font-family: 'Frijole'" href="https://www.github.com/isaacsaqib/Workout_App"> Github
-          </a>
-        </p>
-        <p style="color: red; text-align: center; font-family: 'Frijole'">
-          <a style="text-decoration: none; color: red; text-align: center; font-family: 'Frijole'" href="https://www.linkedin.com/pub/isaac-saqib/95/a84/905">LinkedIn
-          </a>
-        </p>
-</div> -->
+  <!-- div id="contactinfo">
+      <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> Contact </h1>
+          <p style="color: red; text-align: center; font-family: 'Frijole'"> Email: Isaac.Saqib@stonybrook.edu </p>
+          <p style="color: red; text-align: center; font-family: 'Frijole'">
+            <a style="text-decoration: none; color: red; text-align: center; font-family: 'Frijole'" href="https://www.github.com/isaacsaqib/Workout_App"> Github
+            </a>
+          </p>
+          <p style="color: red; text-align: center; font-family: 'Frijole'">
+            <a style="text-decoration: none; color: red; text-align: center; font-family: 'Frijole'" href="https://www.linkedin.com/pub/isaac-saqib/95/a84/905">LinkedIn
+            </a>
+          </p>
+  </div> -->
 
   <div id="videoContainer">
   </div>
@@ -67,106 +76,93 @@
     <div class="bodypart" id="Right-Leg">
     </div>
 
-  <div class="bodypart" id="Shoulder">
-  </div>
-  <!-- Bicep -->
-  <div class="bodypart" id="Bicep">
-  </div>
-  <!-- Tricep -->
-  <div class="bodypart" id="Tricep">
-  </div>
-  <!-- Forearm -->
-  <div class="bodypart" id="Forearm">
-  </div>
-  <!-- Quad -->
-  <div class="bodypart" id="Quad">
-  </div>
-  <!-- Tibialis -->
-  <div class="bodypart" id="Tibialis">
-  </div>
-  <!-- Hamstring -->
-  <div class="bodypart" id="Hamstring">
-  </div>
-  <!-- Calve -->
-  <div class="bodypart" id="Calve">
-  </div>
-  <!-- Right glute -->
-  <div class="bodypart" id="Right-Glute">
-  </div>
-  <!-- Left glute  -->
-  <div class="bodypart" id="Left-Glute">
-  </div>
-  <!-- Left lat -->
-  <div class="bodypart" id="Left-Lat">
-  </div>
-  <!-- Right lat -->
-  <div class="bodypart" id="Right-Lat">
-  </div>
+    <div class="bodypart" id="Shoulder">
+    </div>
+    <!-- Bicep -->
+    <div class="bodypart" id="Bicep">
+    </div>
+    <!-- Tricep -->
+    <div class="bodypart" id="Tricep">
+    </div>
+    <!-- Forearm -->
+    <div class="bodypart" id="Forearm">
+    </div>
+    <!-- Quad -->
+    <div class="bodypart" id="Quad">
+    </div>
+    <!-- Tibialis -->
+    <div class="bodypart" id="Tibialis">
+    </div>
+    <!-- Hamstring -->
+    <div class="bodypart" id="Hamstring">
+    </div>
+    <!-- Calve -->
+    <div class="bodypart" id="Calve">
+    </div>
+    <!-- Right glute -->
+    <div class="bodypart" id="Right-Glute">
+    </div>
+    <!-- Left glute  -->
+    <div class="bodypart" id="Left-Glute">
+    </div>
+    <!-- Left lat -->
+    <div class="bodypart" id="Left-Lat">
+    </div>
+    <!-- Right lat -->
+    <div class="bodypart" id="Right-Lat">
+    </div>
 
-  <div class="bodypart" id="Trapezius">
-  </div>
+    <div class="bodypart" id="Trapezius">
+    </div>
 
-  <div class="bodypart" id="Rhomboids">
-  </div>
+    <div class="bodypart" id="Rhomboids">
+    </div>
 
-  <div class="bodypart" id="Lower-Back">
-  </div>
+    <div class="bodypart" id="Lower-Back">
+    </div>
 
 <!-- <h1 class="rear" id="rear-torso-text"> Back </h1> -->
-<h1 class="rear" id="rear-leg-text"> Rear Leg </h1>
+  <h1 class="rear" id="rear-leg-text"> Rear Leg </h1>
 
 
+  <% end %>
 
-
-<% else %>
-
-  <a class="links" id="signuplink" href="/users/new"> Sign up </a>
-    <a class="links" id="login-link" href="/session/new"> Log In </a>
-
-
-<div id="form-container">
-  <div id="sign-up-form">
-    <%= form_for(@user) do |f| %>
-      <%= f.label(:name) %>
-        <%= f.text_field(:name) %>
-        <br>
-      <%= f.label(:email) %>
-        <%= f.text_field(:email) %>
-            <br>
-
-      <%= f.label(:password) %>
-        <%= f.password_field(:password) %>
-            <br>
-
-      <%= f.label(:password_confirmation) %>
-        <%= f.password_field(:password_confirmation) %>
-            <br>
-
-      <%= f.submit %>
-    <% end %>
+  <div id="info-box">
+    <h1 style="text-align:center;">Welcome to Work Me Out</h1>
+    <p>Our mission is to provide the user with quick and efficient ways to organize their Workoutouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
   </div>
 
-<br>
 
-  <div id="login-form">
-      <%= form_tag("/session", method: "post") do %>
-        <%= label_tag(:email) %>
-        <%= text_field_tag(:email) %><br>
-        <%= label_tag(:password) %>
-        <%= password_field_tag(:password) %>
-        <%= submit_tag("Login") %>
+   <ul class="forms">
+     <li><%= form_tag("/session", method: "post") do %></li>
+          <li><%= label_tag(:email) %></li>
+          <li><%= text_field_tag :email, class: "text-field"  %><br></li>
+          <li><%= label_tag(:password) %></li>
+          <li><%= password_field_tag(:password) %></li>
+         <input class="buttons" type="submit" value="Log in">
         <% end %>
+  </ul>
+
+    <ul class="forms">
+    <li><%= form_for(@user) do |f| %></li>
+      <li><%= f.label(:name) %></li>
+        <li><%= f.text_field :name, class: "text-field" %></li>
+      <li><%= f.label(:email) %></li>
+        <li><%= f.text_field :email, class: "text-field"  %></li>
+      <li><%= f.label(:password) %></li>
+        <li><%= f.password_field :password, class: "text-field" %></li>
+      <li><%= f.label(:password_confirmation) %></li>
+        <li><%= f.password_field :password_confirmation, class: "text-field" %></li>
+      <input class="buttons" type="submit" value="Sign up">
     <% end %>
-  </div>
+  </ul>
 
 
-<% flash.each do |key, value| %>
-  <div class="flash"><%= value %><br></div>
-<% end %>
-
-</div>
 <!-- <footer id="footer">
 
 </footer>
  -->
 
+
+</body>
+</html>
