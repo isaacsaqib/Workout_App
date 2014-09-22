@@ -132,8 +132,22 @@
     <h1 style="text-align:center;">Welcome to Work Me Out</h1>
     <p>Our mission is to provide the user with quick and efficient ways to organize their Workoutouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
   </div>
-
-<div id="form-box">
+<div id="form-box-signup">
+  <ul class="forms">
+     <li><%= form_for(@user) do |f| %></li>
+       <li><%= f.label(:name) %></li>
+         <li><%= f.text_field :name, class: "text-field" %></li>
+       <li><%= f.label(:email) %></li>
+         <li><%= f.text_field :email, class: "text-field"  %></li>
+       <li><%= f.label(:password) %></li>
+         <li><%= f.password_field :password, class: "text-field" %></li>
+       <li><%= f.label(:password_confirmation) %></li>
+         <li><%= f.password_field :password_confirmation, class: "text-field" %></li>
+      <input class="buttons" type="submit" value="Sign up">
+    <% end %>
+  </ul>
+</div>
+<div id="form-box-login">
     <h1 style="color:white; text-align:center;">Lets get started.</h1>
     <p> Time to get ripped. </p>
   <ul class="forms">
@@ -145,7 +159,11 @@
          <input class="buttons" type="submit" value="Log in">
         <% end %>
   </ul>
+  <br>
+  <p id="signup-trigger"> Click here to sign up </p>
 </div>
+
+
 
 
 
