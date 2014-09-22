@@ -15,8 +15,14 @@
  */
 @font-face {
   font-family: Ultimate-Midnight;
-  src: url("/assets/dude.ttf") format("truetype");
+  src: url("ultimateMIDNIGHT.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: SecretCode;
+  src: url("secretcode.ttf") format("truetype");
+}
+
 body {
   background-image: url("http://www.crossfiteastdecatur.com/wp-content/uploads/2013/12/CBC.jpg") ;
   /*background-repeat: none;*/
@@ -189,36 +195,66 @@ right: 10px;
   text-align: center;
   vertical-align: middle;
   list-style: none;
+  margin: 0 auto;
+  margin-right: 30px;
+
 
 }
 
 .forms label {
-  text-align: left;
-  padding: 0px 0px 3px 3px;
+  /*text-align: center;*/
+  /*padding: 0px 0px 3px 3px;*/
+  color: white;
+  font-size: 20px;
+  font-family: 'Poiret One', cursive;
+
+  /*font-family: 'Frijole'*/
 }
 
 
 .forms input {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
+  font-size: 30px;
+}
+
+#form-box {
+  background-color: rgba(0, 0, 0, .8);
+  height: 340px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 1px 13px 33px black;
+
+}
+
+#form-box h1 {
+}
+
+#form-box p {
+  color: #A0A0A0 ;
+  text-align: center;
+  font-size: 20px;
+  /*margin: 0px;*/
 }
 
 
 .buttons {
   color: white;
-  /*padding: 0px 10px 10px 10px;*/
+  padding: 0px 100px 0px 100px;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 0, 0, 1)), color-stop(0.49, rgba(255, 0, 0, 0.4)), color-stop(0.51, rgba(255, 0, 0, .5)), to(rgba(255, 0, 0, 0.7))); /* Chrome,Safari4+ */
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   -webkit-border-radius: 5px;
-  /*box-shadow: 10px 10px 10px black;*/
+  box-shadow: 10px 10px 10px black;
   -webkit-box-shadow: 1px 13px 33px rgba(0, 0, 0, 1);
   text-decoration: none;
-  text-align: left;
+  /*text-align: left;*/
+  margin-top: 10px;
 
 }
 
 .text-field {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 
@@ -234,8 +270,10 @@ right: 10px;
 
 #info-box h1 {
     font-family: Ultimate-Midnight;
+}
 
-  /*color: white;*/
-  /*text-align: center;*/
-  /*margin-top: 10px;*/
+#info-box p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+
 }

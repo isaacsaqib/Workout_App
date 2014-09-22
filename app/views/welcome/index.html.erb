@@ -8,6 +8,7 @@
   <title>WorkMeOut</title>
   <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <header>
@@ -132,30 +133,22 @@
     <p>Our mission is to provide the user with quick and efficient ways to organize their Workoutouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
   </div>
 
-
-   <ul class="forms">
+<div id="form-box">
+    <h1 style="color:white; text-align:center;">Lets get started.</h1>
+    <p> Time to get ripped. </p>
+  <ul class="forms">
      <li><%= form_tag("/session", method: "post") do %></li>
           <li><%= label_tag(:email) %></li>
-          <li><%= text_field_tag :email, class: "text-field"  %><br></li>
+          <li><%= text_field_tag (:email) %></li>
           <li><%= label_tag(:password) %></li>
           <li><%= password_field_tag(:password) %></li>
          <input class="buttons" type="submit" value="Log in">
         <% end %>
   </ul>
+</div>
 
-    <ul class="forms">
-    <li><%= form_for(@user) do |f| %></li>
-      <li><%= f.label(:name) %></li>
-        <li><%= f.text_field :name, class: "text-field" %></li>
-      <li><%= f.label(:email) %></li>
-        <li><%= f.text_field :email, class: "text-field"  %></li>
-      <li><%= f.label(:password) %></li>
-        <li><%= f.password_field :password, class: "text-field" %></li>
-      <li><%= f.label(:password_confirmation) %></li>
-        <li><%= f.password_field :password_confirmation, class: "text-field" %></li>
-      <input class="buttons" type="submit" value="Sign up">
-    <% end %>
-  </ul>
+
+
 
 
 <!-- <footer id="footer">
