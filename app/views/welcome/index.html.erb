@@ -65,7 +65,7 @@
     <div class="bodypart" id="Abdominals">
     </div>
     <!-- Right arm -->
-    <div class="bodypart" id="Rig<%= f.text_area :attribute %>ht-Arm">
+    <div class="bodypart" id="Right-Arm">
     </div>
     <!-- Left arm -->
     <div class="bodypart" id="Left-Arm">
@@ -133,6 +133,8 @@
     <p>Our mission is to provide the user with quick and efficient ways to organize their Workoutouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
   </div>
 <div id="form-box-signup">
+      <h1 style="color:white; text-align:center;">Sign up.</h1>
+
   <ul class="forms">
      <li><%= form_for(@user) do |f| %></li>
        <li><%= f.label(:name) %></li>
@@ -147,6 +149,8 @@
     <% end %>
   </ul>
 </div>
+
+
 <div id="form-box-login">
     <h1 style="color:white; text-align:center;">Lets get started.</h1>
     <p> Time to get ripped. </p>
@@ -163,19 +167,16 @@
   <p id="signup-trigger"> Click here to sign up </p>
 </div>
 
-
-
-<!<% #flash.each do |key, value| %>
-  <!-- <div class="flash"><%= value %><br></div>
-<!<% #end %>
+<% flash.each do |key, value| %>
+   <div class="flash"><p style="text-align:center; color:red;"><%= value %></p><br></div>
+<% end %>
 
 
 
 
-<!-- <footer id="footer">
+<!-- <footer id="footer"> -->
 
-</footer>
- -->
+<!-- </footer> -->
 
 
 </body>

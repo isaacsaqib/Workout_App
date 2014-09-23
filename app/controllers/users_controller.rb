@@ -12,7 +12,7 @@ class UsersController < ApplicationController
         redirect_to("/")
       else
         redirect_to("/")
-        flash[:create_error] = "Something Went Wrong"
+        flash[:messages] = "The email address you entered is taken/invalid or the password you entered is invalid."
       end
   end
 

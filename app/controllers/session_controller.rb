@@ -13,7 +13,7 @@ class SessionController < ApplicationController
       redirect_to("/")
     else
       redirect_to("/")
-      flash[:messages] = "Bad"
+      flash[:messages] = "Your email or password was wrong, please try again!"
     end
   end
 
