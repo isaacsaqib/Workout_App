@@ -70,6 +70,10 @@
     <!-- Left arm -->
     <div class="bodypart" id="Left-Arm">
     </div>
+    <div id="container">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
     <!-- Left leg -->
     <div class="bodypart" id="Left-Leg">
     </div>
@@ -124,9 +128,7 @@
 
 <!-- <h1 class="rear" id="rear-torso-text"> Back </h1> -->
   <h1 class="rear" id="rear-leg-text"> Rear Leg </h1>
-
-
-  <% end %>
+<% else %>
 
   <div id="info-box">
     <h1 style="text-align:center;">Welcome to Work Me Out</h1>
@@ -134,7 +136,6 @@
   </div>
 <div id="form-box-signup">
       <h1 style="color:white; text-align:center;">Sign up.</h1>
-
   <ul class="forms">
      <li><%= form_for(@user) do |f| %></li>
        <li><%= f.label(:name) %></li>
@@ -145,7 +146,7 @@
          <li><%= f.password_field :password, class: "text-field" %></li>
        <li><%= f.label(:password_confirmation) %></li>
          <li><%= f.password_field :password_confirmation, class: "text-field" %></li>
-      <input class="buttons" type="submit" value="Sign up">
+      <input class="buttons" id="signup-button" type="submit" value="Sign up">
     <% end %>
   </ul>
 </div>
@@ -160,7 +161,7 @@
           <li><%= text_field_tag (:email) %></li>
           <li><%= label_tag(:password) %></li>
           <li><%= password_field_tag(:password) %></li>
-         <input class="buttons" type="submit" value="Log in">
+         <input class="buttons" id="login-button" type="submit" value="Log in">
         <% end %>
   </ul>
   <br>
@@ -170,6 +171,8 @@
 <% flash.each do |key, value| %>
    <div class="flash"><p style="text-align:center; color:red;"><%= value %></p><br></div>
 <% end %>
+
+<%end%>
 
 
 

@@ -24,7 +24,7 @@
 }
 
 body {
-  background-image: url("http://www.crossfiteastdecatur.com/wp-content/uploads/2013/12/CBC.jpg") ;
+  background-image: url("background-barbell.jpg") ;
   /*background-repeat: none;*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +77,7 @@ header {
   color: white;
   z-index: 1;
 }
-
+/*
 #banner {
   height: 96px;
   width: 1425px;
@@ -87,7 +87,7 @@ header {
   position: absolute;
   top: 0px;
 
-}
+}*/
 
 .links {
   color: white;
@@ -99,7 +99,7 @@ header {
   font-family: 'Frijole', cursive;
 }
 
-#sign-up-form {
+/*#sign-up-form {
   color: white;
   font-size: 14px;
   font-family: 'Frijole', cursive;
@@ -115,7 +115,7 @@ header {
   margin-top: 30px ;
 
 }
-
+*/
 #logout {
   text-align: left;
   position: absolute;
@@ -129,7 +129,7 @@ right: 10px;
 
 }
 
-#footer {
+/*#footer {
   height: 75px;
   width: 1425px;
   background-color: black;
@@ -138,41 +138,41 @@ right: 10px;
   position: absolute;
   bottom: 0px;
 
-}
+}*/
 
 
-#info {
+/*#info {
   height: 400px;
   width: 400px;
-  /*position: absolute;*/
+  position: absolute;
   background-color: black;
   opacity: .6;
-  /*top: 170px;*/
-  /*left: 40px;*/
+  top: 170px;
+  left: 40px;
   border: 10px dotted white;
   border-radius: 10px;
   padding: 10px;
   float: left;
 
 }
+*/
 
-
-#contactinfo {
+/*#contactinfo {
   height: 400px;
   width: 400px;
-  /*position: absolute;*/
+  position: absolute;
   background-color: black;
   opacity: .6;
-  /*top: 170px;*/
-  /*right: 40px;*/
+  top: 170px;
+  right: 40px;
   border: 10px dotted white;
   border-radius: 10px;
   padding: 10px;
   float: right;
 
-}
+}*/
 
-#form-container {
+/*#form-container {
   height: 400px;
   width: 400px;
   background-color: black;
@@ -183,7 +183,7 @@ right: 10px;
   border: 4px solid white;
   border-radius: 120px;
 
-}
+}*/
 
 
 .flash {
@@ -198,23 +198,15 @@ right: 10px;
   list-style: none;
   margin: 0 auto;
   margin-right: 30px;
-
-
 }
 
 .forms label {
-  /*text-align: center;*/
-  /*padding: 0px 0px 3px 3px;*/
   color: white;
   font-size: 20px;
   font-family: 'Poiret One', cursive;
-
-  /*font-family: 'Frijole'*/
 }
 
-
 .forms input {
-  /*border: 2px solid red;*/
   font-size: 30px;
 }
 
@@ -226,9 +218,6 @@ right: 10px;
   border-radius: 10px;
   box-shadow: 1px 13px 33px black;
 
-}
-
-#form-box-login h1 {
 }
 
 #form-box-login p {
@@ -249,9 +238,6 @@ right: 10px;
 
 }
 
-#form-box-signup h1 {
-}
-
 #form-box-signup p {
   color: #A0A0A0 ;
   text-align: center;
@@ -260,6 +246,24 @@ right: 10px;
   /*margin: 0px;*/
 }
 
+#info-box {
+  background-color: rgba(255, 255, 255, .6);
+  height: 200px;
+  width: 600px;
+  box-shadow: 1px 13px 33px black;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding:20px;
+}
+
+#info-box h1 {
+    font-family: Ultimate-Midnight;
+}
+
+#info-box p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
 
 
 .buttons {
@@ -281,23 +285,88 @@ right: 10px;
   font-size: 70px;
 }
 
-
-#info-box {
-  background-color: rgba(255, 255, 255, .6);
-  height: 200px;
-  width: 600px;
-  box-shadow: 1px 13px 33px black;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding:20px;
+#container {
+  margin-top: 20px;
+  margin-left: 30px;
+  position: relative;
+  background: #45453f;
 }
 
-#info-box h1 {
-    font-family: Ultimate-Midnight;
+.pulse {
+  width: 10px;
+  height: 10px;
+  border: 5px solid black;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #716f42;
+  z-index: 10;
+  position: absolute;
 }
 
-#info-box p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+.dot {
+  border: 10px solid #fff601;
+  background: transparent;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  height: 70px;
+  width: 70px;
+  -webkit-animation: pulse 3s ease-out;
+  -moz-animation: pulse 3s ease-out;
+  animation: pulse 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: 1;
+  opacity: 0;
+}
 
+@-moz-keyframes pulse {
+ 0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+@-webkit-keyframes "pulse" {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
 }
