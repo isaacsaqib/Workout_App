@@ -1,11 +1,11 @@
 #Abdominals {
   height: 250px;
   width: 110px;
-  background-color: red;
+  /*background-color: black;*/
   position: absolute;
   left: 657px;
   top: 300px;
-  opacity: 0;
+  opacity: 1;
   border-radius: 50px;
 }
 

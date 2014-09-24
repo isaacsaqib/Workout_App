@@ -12,15 +12,17 @@
 </head>
 <body>
   <header>
-    <h1 id="logo"> WorkMeOut </h1>
-
+  <ul id="header-nav">
+    <li><h1>WorkMeOut</h1></li>
+    <li><h1><a href="/logout"> Logout</a></h1></li>
+    <li><h1><a href="/"> Home</a></h1></li>
+  </ul>
   </header>
 
 
   <% if logged_in? %>
+  <body style="background-image: url('assets/background-2.jpg');">
   <a class="links" id="workouts" href="/workouts"> Workouts </a>
-  <a class="links" id="logout" href="/logout"> Logout</a>
-  <a class="links" id="home" href="/"> Home </a>
     <h1 id="bodypart-text"></h1>
     <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
 
@@ -57,28 +59,54 @@
   <%= image_tag "torsoedit2.png", :class => "torso" %>
     <!-- Left chest -->
     <div class="bodypart" id="Left-Chest">
+      <div id="left-chest-dot">
+      <div class="dot"></div>
+      <div class="pulse"></div>
+      </div>
     </div>
     <!-- Right chest -->
     <div class="bodypart" id="Right-Chest">
+      <div id="right-chest-dot">
+      <div class="dot"></div>
+      <div class="pulse"></div>
+      </div>
     </div>
     <!-- Abs -->
     <div class="bodypart" id="Abdominals">
+      <div id="abdominals-dot">
+      <div class="dot"></div>
+      <div class="pulse"></div>
+      </div>
     </div>
     <!-- Right arm -->
     <div class="bodypart" id="Right-Arm">
+      <div id="right-arm-dot">
+      <div class="dot"></div>
+      <div class="pulse"></div>
+      </div>
     </div>
+
     <!-- Left arm -->
     <div class="bodypart" id="Left-Arm">
+      <div id="left-arm-dot">
+      <div class="dot"></div>
+      <div class="pulse"></div>
+      </div>
     </div>
-    <div id="container">
-    <div class="dot"></div>
-    <div class="pulse"></div>
-    </div>
+
     <!-- Left leg -->
     <div class="bodypart" id="Left-Leg">
+      <div id="left-leg-dot">
+      <div class="dot"></div>
+      <div class="pulse"></div>
+      </div>
     </div>
     <!-- Right leg -->
     <div class="bodypart" id="Right-Leg">
+      <div id="right-leg-dot">
+      <div class="dot"></div>
+      <div class="pulse"></div>
+      </div>
     </div>
 
     <div class="bodypart" id="Shoulder">
@@ -128,6 +156,8 @@
 
 <!-- <h1 class="rear" id="rear-torso-text"> Back </h1> -->
   <h1 class="rear" id="rear-leg-text"> Rear Leg </h1>
+
+  </body>
 <% else %>
 
   <div id="info-box">
