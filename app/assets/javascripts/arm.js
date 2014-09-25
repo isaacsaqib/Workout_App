@@ -5,6 +5,7 @@ $(document).ready(function(){
   $("#Tricep").hide();
   $("#Forearm").hide();
   $("#Shoulder").hide();
+  $("#arm-image-preview-container").hide();
 
   $("#Right-Arm").on("click", function(){
     $(".arm-image").fadeIn();
@@ -15,6 +16,14 @@ $(document).ready(function(){
     $("#Forearm").show();
     $("#Shoulder").show();
     $("#rear-torso-text").hide();
+  });
+
+  $("#Right-Arm").on("mouseover", function(){
+    $("#arm-image-preview-container").fadeIn();
+  });
+
+  $("#Right-Arm").on("mouseleave", function(){
+    $("#arm-image-preview-container").hide();
   });
 
 

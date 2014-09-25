@@ -54,14 +54,14 @@ $(document).ready(function(){
 
   $(".rear-torso-image").hide();
 
-  $(".bodypart").on("mouseover", function(){
-    var id = $(this).attr("id")
-    $("#bodypart-text").text(id).fadeIn();
-  });
+  // $(".bodypart").on("mouseover", function(){
+  //   var id = $(this).attr("id")
+  //   $("#bodypart-text").text(id).fadeIn();
+  // });
 
-  $(".bodypart").on("mouseleave", function(){
-    $("#bodypart-text").fadeOut();
-  });
+  // $(".bodypart").on("mouseleave", function(){
+  //   $("#bodypart-text").fadeOut();
+  // });
 
   $("#rear-torso-text").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
