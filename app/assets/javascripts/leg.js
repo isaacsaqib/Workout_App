@@ -8,7 +8,7 @@ $(document).ready(function(){
   $(".rear-leg-image").hide();
   $("#rear-leg-text").hide();
   $("#videoContainer").hide();
-
+  $("#leg-image-preview-container").hide();
 
   $("#Right-Leg").on("click", function(){
     $(".torso").css("position", "absolute").css("top", "100px").css("left", "400px").animate({left: "900px"}, 500).fadeOut();
@@ -18,6 +18,14 @@ $(document).ready(function(){
     $("#Quad").show();
     $("#rear-leg-text").show();
     $("#rear-torso-text").hide();
+  });
+
+   $("#Right-Leg").on("mouseover", function(){
+    $("#leg-image-preview-container").fadeIn();
+  });
+
+  $("#Right-Leg").on("mouseleave", function(){
+    $("#leg-image-preview-container").hide();
   });
 
   $("#Left-Leg").on("click", function(){
