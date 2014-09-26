@@ -48,7 +48,7 @@ $(document).ready(function(){
   $("#Left-Lat").css('left', window.innerWidth/2 - 90);
   $("#Rhomboids").css('left', window.innerWidth/2 - 66);
   $("#Trapezius").css('left', window.innerWidth/2 - 80);
-
+  $(".text-preview").hide();
 
   $("#Abdominals").css('left', window.innerWidth/2 - 60);
 
@@ -56,14 +56,26 @@ $(document).ready(function(){
 
   // $(".bodypart").on("mouseover", function(){
   //   var id = $(this).attr("id")
-  //   $("#bodypart-text").text(id).fadeIn();
+  //   $(".text-preview").text(id).css("margin-top", "20px").fadeIn();
   // });
 
   // $(".bodypart").on("mouseleave", function(){
-  //   $("#bodypart-text").fadeOut();
+  //   $(".text-preview").fadeOut();
   // });
 
-  $("#rear-torso-text").on("click", function(){
+  $(".bodypart").on("mouseover", function(){
+    $(".text-preview").css("margin-top", "20px").fadeIn();
+
+  })
+
+  $(".bodypart").on("mouseleave", function(){
+    $(".text-preview").fadeOut();
+
+  })
+
+
+
+  $("#back-view").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
     $(".rear-torso-image").fadeIn();
