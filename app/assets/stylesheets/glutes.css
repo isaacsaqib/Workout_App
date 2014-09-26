@@ -1,8 +1,8 @@
 #Right-Glute {
-  height: 131px;
-  width: 95px;
+  /*height: 131px;*/
+  /*width: 95px;*/
   background-color: red;
-  opacity: 0;
+  opacity: .7;
   position: absolute;
   bottom: 120px;
   right: 740px;
@@ -10,14 +10,14 @@
 }
 
 #Right-Glute:hover {
-  opacity: .6
+  opacity: 1;
 }
 
 #Left-Glute {
-  height: 131px;
-  width: 95px;
+  /*height: 131px;*/
+  /*width: 95px;*/
   background-color: red;
-  opacity: 0;
+  opacity: .7;
   position: absolute;
   bottom: 120px;
   right: 718px;
@@ -25,5 +25,5 @@
 }
 
 #Left-Glute:hover {
-  opacity: .6
+  opacity: 1;
 }

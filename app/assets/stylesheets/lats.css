@@ -1,23 +1,24 @@
 #Left-Lat {
-  height: 129px;
-  width: 65px;
+  /*height: 129px;*/
+  /*width: 65px;*/
   border-radius: 20px;
   background-color: red;
   position: absolute;
   left: 624px;
   top: 320px;
   -webkit-transform: rotate(-17deg);
-  opacity: 0;
+  opacity: .7;
 }
 
 #Left-Lat:hover {
-  opacity: .6;
+  opacity: 1;
+  cursor: pointer;
 }
 
 
 
 #Right-Lat {
-  height: 129px;
+  /*height: 129px;*/
   width: 65px;
   border-radius: 20px;
   background-color: red;
@@ -25,53 +26,56 @@
   right: 611px;
   top: 320px;
   -webkit-transform: rotate(13deg);
-  opacity: 0;
+  opacity: .7;
 }
 
 #Right-Lat:hover {
-  opacity: .6;
+  opacity: 1;
+  cursor: pointer;
 }
 
 
 #Lower-Back {
-  height: 100px;
-  width: 100px;
+  /*height: 100px;*/
+  /*width: 100px;*/
   position: absolute;
   bottom: 241px;
   right: 659px;
   background-color: red;
-  opacity: 0;
+  opacity: .7;
   border-radius: 41px;
 }
 
 #Lower-Back:hover {
-  opacity: .6;
+  opacity: 1;
+  cursor: pointer;
 
 }
 
 #Rhomboids {
-  width: 0;
-  height: 0;
-  border-left: 76px solid transparent;
-  border-right: 70px solid transparent;
-  border-top: 133px solid red;
+  /*width: 0;*/
+  /*height: 0;*/
+  /*border-left: 76px solid transparent;*/
+  /*border-right: 70px solid transparent;*/
+  /*border-top: 133px solid red;*/
   position: absolute;
   top: 290px;
   left: 650px;
   border-radius: 20px;
-  opacity: 0;
+  opacity: .7;
 
 }
 
 #Rhomboids:hover {
-  opacity: .6;
+  opacity: 1;
+  cursor: pointer;
 
 }
 
 #Trapezius {
-  height: 50px;
-  width: 160px;
-  opacity: 0;
+  /*height: 50px;*/
+  /*width: 160px;*/
+  opacity: .7;
   background-color: red;
   position: absolute;
   top: 230px;
@@ -81,6 +85,7 @@
 }
 
 #Trapezius:hover {
-  opacity: .6;
+  opacity: 1;
+  cursor: pointer;
 }
 
