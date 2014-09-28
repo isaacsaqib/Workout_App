@@ -34,22 +34,23 @@ $(document).ready(function(){
   $("#Left-Chest").css('left', window.innerWidth/2 - 112);
   $("#Right-Chest").css('left', window.innerWidth/2 + 10);
   $("#Left-Arm").css('left', window.innerWidth/2 - 190);
-  $("#Right-Arm").css('right', window.innerWidth/2 - 190);
+  $("#Right-Arm").css('right', window.innerWidth/2 - 150);
   $("#Right-Leg").css('right', window.innerWidth/2 - 120);
   $("#Left-Leg").css('left', window.innerWidth/2 - 140);
-  $("#Tricep").css('left', window.innerWidth/2 - 50);
-  $("#Bicep").css('right', window.innerWidth/2 - 30);
-  $("#Forearm").css('left', window.innerWidth/2 - 40);
-  $("#Shoulder").css('left', window.innerWidth/2 - 60);
+  $("#Tricep").css('left', window.innerWidth/2 - 85);
+  $("#Bicep").css('right', window.innerWidth/2 - 5);
+  $("#Forearm").css('left', window.innerWidth/2 - 20);
+  $("#Shoulder").css('left', window.innerWidth/2 - 30);
   $("#Left-Glute").css('left', window.innerWidth/2 - 90);
   $("#Right-Glute").css('right', window.innerWidth/2 - 120);
   $("#Lower-Back").css('right', window.innerWidth/2 - 65);
-  $("#Right-Lat").css('right', window.innerWidth/2 - 105);
+  $("#Right-Lat").css('right', window.innerWidth/2 - 145);
   $("#Left-Lat").css('left', window.innerWidth/2 - 90);
-  $("#Rhomboids").css('left', window.innerWidth/2 - 66);
+  $("#Rhomboids").css('left', window.innerWidth/2 - 5);
   $("#Trapezius").css('left', window.innerWidth/2 - 80);
   $(".text-preview").hide();
-
+  $("#Quad").css('left', window.innerWidth/2 -30);
+  $("#Tibialis").css('left', window.innerWidth/2 - 5);
   $("#Abdominals").css('left', window.innerWidth/2 - 60);
 
   $(".rear-torso-image").hide();
@@ -63,15 +64,34 @@ $(document).ready(function(){
   //   $(".text-preview").fadeOut();
   // });
 
+  // $(".bodypart").on("mouseover", function(){
+  //   var id = $(this).attr("id");
+  //   // $(".text-preview").css("margin-top", "20px").fadeIn();
+
+  // });
+
+
   $(".bodypart").on("mouseover", function(){
-    $(".text-preview").css("margin-top", "20px").fadeIn();
+    $(this).children("p").css("margin-top", "15px").fadeIn();
+    // $(".text-preview").css("margin-top", "20px").fadeIn();
 
-  })
+  });
 
-  $(".bodypart").on("mouseleave", function(){
-    $(".text-preview").fadeOut();
 
-  })
+
+  $(".bodypart").on("mouseover", function(){
+    $(this).children("p").css("margin-top", "15px").fadeOut();
+    // $(".text-preview").css("margin-top", "20px").fadeIn();
+
+  });
+
+
+
+
+  // $(".bodypart").on("mouseleave", function(){
+  //   $(".text-preview").fadeOut();
+
+  // });
 
 
 
@@ -96,6 +116,8 @@ $(document).ready(function(){
     $("#contactinfo").fadeOut();
 
   });
+
+
 
 
   $("button").on("click", function(){

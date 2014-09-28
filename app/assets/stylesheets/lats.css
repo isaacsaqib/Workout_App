@@ -2,8 +2,8 @@
   /*height: 129px;*/
   /*width: 65px;*/
   border-radius: 20px;
-  background-color: red;
-  position: absolute;
+  /*background-color: red;
+*/  position: absolute;
   left: 624px;
   top: 320px;
   -webkit-transform: rotate(-17deg);
@@ -21,8 +21,8 @@
   /*height: 129px;*/
   width: 65px;
   border-radius: 20px;
-  background-color: red;
-  position: absolute;
+  /*background-color: red;
+*/  position: absolute;
   right: 611px;
   top: 320px;
   -webkit-transform: rotate(13deg);
@@ -41,8 +41,8 @@
   position: absolute;
   bottom: 241px;
   right: 659px;
-  background-color: red;
-  opacity: .7;
+  /*background-color: red;
+*/  opacity: .7;
   border-radius: 41px;
 }
 
@@ -76,8 +76,8 @@
   /*height: 50px;*/
   /*width: 160px;*/
   opacity: .7;
-  background-color: red;
-  position: absolute;
+  /*background-color: red;
+*/  position: absolute;
   top: 230px;
   right: 640px;
   border-radius: 30px;
