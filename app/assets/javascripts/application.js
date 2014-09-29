@@ -41,17 +41,21 @@ $(document).ready(function(){
   $("#Bicep").css('right', window.innerWidth/2 - 5);
   $("#Forearm").css('left', window.innerWidth/2 - 20);
   $("#Shoulder").css('left', window.innerWidth/2 - 30);
-  $("#Left-Glute").css('left', window.innerWidth/2 - 90);
+  $("#Left-Glute").css('right', window.innerWidth/2 - 5);
   $("#Right-Glute").css('right', window.innerWidth/2 - 120);
   $("#Lower-Back").css('right', window.innerWidth/2 - 65);
   $("#Right-Lat").css('right', window.innerWidth/2 - 145);
   $("#Left-Lat").css('left', window.innerWidth/2 - 90);
   $("#Rhomboids").css('left', window.innerWidth/2 - 5);
-  $("#Trapezius").css('left', window.innerWidth/2 - 80);
+  $("#Trapezius").css('right', window.innerWidth/2 - 75);
   $(".text-preview").hide();
   $("#Quad").css('left', window.innerWidth/2 -30);
   $("#Tibialis").css('left', window.innerWidth/2 - 5);
   $("#Abdominals").css('left', window.innerWidth/2 - 60);
+  $("#arm-image-preview-container").css('right', window.innerWidth/2 - 300);
+  $("#leg-image-preview-container").css('left', window.innerWidth/2 - 300);
+  $("#Hamstring").css('left', window.innerWidth/2 -30);
+  $("#Calve").css('left', window.innerWidth/2 -30);
 
   $(".rear-torso-image").hide();
 
