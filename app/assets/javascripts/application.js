@@ -27,7 +27,7 @@
 
 $(document).ready(function(){
   $("#form-container").hide();
-
+$("#return-rear-leg").hide();
   $(".bodypart").css("top", "+=" + 50);
   $(".bodypart").css("bottom", "-=" + 50);
 
@@ -103,7 +103,7 @@ $(document).ready(function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
     $(".rear-torso-image").fadeIn();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
     $("#Right-Glute").show();
     $("#Left-Glute").show();
     $("#Right-Lat").show();
@@ -113,6 +113,8 @@ $(document).ready(function(){
     $("#Trapezius").show();
     $("#info").fadeOut();
     $("#contactinfo").fadeOut();
+    $("#return").hide();
+
   });
 
   $(".bodypart").on("click", function(){

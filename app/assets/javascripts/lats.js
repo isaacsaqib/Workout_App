@@ -10,6 +10,8 @@ $(document).ready(function(){
     $(".bodypart").hide();
     $(".rear-torso-image").animate({top: "400px"}, 500).fadeOut();
     $("#videoContainer").show();
+    $("#return").hide();
+
     getAndAppendVideoIframes("lat workout", $("#videoContainer"));
   });
 
@@ -17,6 +19,8 @@ $(document).ready(function(){
     $(".bodypart").hide();
     $(".rear-torso-image").animate({top: "400px"}, 500).fadeOut();
     $("#videoContainer").show();
+    $("#return").hide();
+
     getAndAppendVideoIframes("lat workout", $("#videoContainer"));
 
   });
@@ -26,6 +30,8 @@ $(document).ready(function(){
     $(".bodypart").hide();
     $(".rear-torso-image").animate({top: "400px"}, 500).fadeOut();
     $("#videoContainer").show();
+    $("#return").hide();
+
     getAndAppendVideoIframes("lower back workout", $("#videoContainer"));
 
   });
@@ -34,6 +40,8 @@ $(document).ready(function(){
     $(".bodypart").hide();
     $(".rear-torso-image").animate({top: "400px"}, 500).fadeOut();
     $("#videoContainer").show();
+    $("#return").hide();
+
     getAndAppendVideoIframes("rhomboids workout", $("#videoContainer"));
 
   });
@@ -43,6 +51,8 @@ $(document).ready(function(){
     $(".bodypart").hide();
     $(".rear-torso-image").animate({top: "400px"}, 500).fadeOut();
     $("#videoContainer").show();
+    $("#return").hide();
+
     getAndAppendVideoIframes("trapezius workout", $("#videoContainer"));
 
   });

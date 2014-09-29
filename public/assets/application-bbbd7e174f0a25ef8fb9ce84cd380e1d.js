@@ -13752,7 +13752,7 @@ $(document).ready(function(){
   $("#Left-Chest").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
     getAndAppendVideoIframes("chest workout", $("#videoContainer"));
     $("#videoContainer").show();
   });
@@ -13761,7 +13761,7 @@ $(document).ready(function(){
   $("#Right-Chest").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
     $("#videoContainer").show();
     getAndAppendVideoIframes("chest workout", $("#videoContainer"));
 
@@ -13787,7 +13787,7 @@ $(document).ready(function(){
     $("#Tricep").show();
     $("#Forearm").show();
     $("#Shoulder").show();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
   });
 
 
@@ -13799,7 +13799,7 @@ $(document).ready(function(){
     $("#Tricep").show();
     $("#Forearm").show();
     $("#Shoulder").show();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
   });
 
   $("#Bicep").on("click", function(){
@@ -13852,7 +13852,7 @@ $(document).ready(function(){
     $("#Tibialis").show();
     $("#Quad").show();
     $("#rear-leg-text").show();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
   });
 
   $("#Left-Leg").on("click", function(){
@@ -13862,7 +13862,7 @@ $(document).ready(function(){
     $("#Tibialis").show();
     $("#Quad").show();
     $("#rear-leg-text").show();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
   });
 
   $("#Quad").on("click", function(){
@@ -13983,7 +13983,7 @@ $(document).ready(function(){
   $("#Abdominals").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
     getAndAppendVideoIframes("abdominals workout", $("#videoContainer"));
     $("#videoContainer").show();
   });
@@ -14038,11 +14038,11 @@ $(document).ready(function(){
     $("#bodypart-text").fadeOut();
   });
 
-  $("#rear-torso-text").on("click", function(){
+  $("#back-view").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
     $(".bodypart").hide();
     $(".rear-torso-image").fadeIn();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
     $("#Right-Glute").show();
     $("#Left-Glute").show();
     $("#Right-Lat").show();

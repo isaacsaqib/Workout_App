@@ -17,7 +17,11 @@ $(document).ready(function(){
     $("#Tibialis").show();
     $("#Quad").show();
     $("#rear-leg-text").show();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
+    $("#return").hide();
+    $("#return-rear-leg").show();
+
+
   });
 
    $("#Right-Leg").on("mouseover", function(){
@@ -28,6 +32,14 @@ $(document).ready(function(){
     $("#leg-image-preview-container").hide();
   });
 
+  $("#Left-Leg").on("mouseover", function(){
+    $("#leg-image-preview-container").fadeIn();
+  });
+
+  $("#Left-Leg").on("mouseleave", function(){
+    $("#leg-image-preview-container").hide();
+  });
+
   $("#Left-Leg").on("click", function(){
     $(".torso").css("position", "absolute").css("top", "100px").css("left", "400px").animate({left: "900px"}, 500).fadeOut();
     $(".bodypart").hide();
@@ -35,11 +47,17 @@ $(document).ready(function(){
     $("#Tibialis").show();
     $("#Quad").show();
     $("#rear-leg-text").show();
-    $("#rear-torso-text").hide();
+    $("#back-view").hide();
+    $("#return").hide();
+    $("#return-rear-leg").show();
+
+
   });
 
   $("#Quad").on("click", function(){
     $(".bodypart").hide();
+    $("#return").hide();
+    $("#return-rear-leg").hide();
     $(".front-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
@@ -48,6 +66,8 @@ $(document).ready(function(){
 
   $("#Tibialis").on("click", function(){
     $(".bodypart").hide();
+    $("#return").hide();
+    $("#return-rear-leg").hide();
     $(".front-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
@@ -56,6 +76,8 @@ $(document).ready(function(){
 
   $("#Hamstring").on("click", function(){
     $(".bodypart").hide();
+    $("#return").hide();
+    $("#return-rear-leg").hide();
     $(".rear-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
@@ -64,6 +86,8 @@ $(document).ready(function(){
 
   $("#Calve").on("click", function(){
     $(".bodypart").hide();
+    $("#return").hide();
+    $("#return-rear-leg").hide();
     $(".rear-leg-image").animate({top: "400px"}, 500).fadeOut();
     $("#rear-leg-text").hide();
     $("#videoContainer").show();
@@ -72,6 +96,8 @@ $(document).ready(function(){
 
   $("#rear-leg-text").on("click", function(){
     $(".bodypart").hide();
+    $("#return").hide();
+    $("#return-rear-leg").hide();
     $(".front-leg-image").animate({top: "400px"}, 500).fadeOut();
     $(".rear-leg-image").fadeIn();
     $("#Hamstring").show();

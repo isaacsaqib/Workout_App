@@ -5,6 +5,8 @@ $(document).ready(function(){
 
   $("#Right-Glute").on("click", function(){
     $(".bodypart").hide();
+    $("#return").hide();
+
     $(".rear-torso-image").animate({top: "400px"}, 500).fadeOut();
     $("#videoContainer").show();
     getAndAppendVideoIframes("butt workout", $("#videoContainer"));
@@ -13,6 +15,8 @@ $(document).ready(function(){
 
   $("#Left-Glute").on("click", function(){
     $(".bodypart").hide();
+    $("#return").hide();
+
     $(".rear-torso-image").animate({top: "400px"}, 500).fadeOut();
     getAndAppendVideoIframes("butt workout", $("#videoContainer"));
   });
