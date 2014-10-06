@@ -6,6 +6,10 @@ $(document).ready(function(){
   $("#arm-image-preview-container").hide();
   $("#return-rear-leg").hide();
 
+// If mobile device is in portrait mode
+ if(window.innerHeight > window.innerWidth){
+    alert("Please rotate your mobile device to view this page!");
+  }
   // If user wants to sign up
   $("#signup-trigger").on("click", function(){
     $("#form-box-login").fadeOut();
@@ -274,9 +278,7 @@ $(document).ready(function(){
     $("#return").hide();
   });
 
-  if(window.innerHeight > window.innerWidth){
-    alert("Please use Landscape!");
-  }
+
   // Shows Rear Torso
   $("#back-view").on("click", function(){
     $(".torso").animate({right: "400px"}, 500).fadeOut();
