@@ -26,6 +26,10 @@
 
 
 $(document).ready(function(){
+
+  if(window.innerHeight > window.innerWidth){
+    alert("Please use Landscape!");
+  }
   $("#form-container").hide();
 $("#return-rear-leg").hide();
   $(".bodypart").css("top", "+=" + 50);

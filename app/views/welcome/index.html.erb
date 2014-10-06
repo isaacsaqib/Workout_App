@@ -1,321 +1,266 @@
-<!--
-<div id="banner">
-
-</div> -->
-
 <html>
-<head>
-  <title>WorkMeOut</title>
-</head>
-<body>
-  <header>
-  <ul id="header-nav">
-    <li><h1>WorkMeOut</h1></li>
-    <li><h1><a href="/logout"> Logout</a></h1></li>
-    <li><h1><a href="/"> Home</a></h1></li>
-  </ul>
-  </header>
-
-
-  <% if logged_in? %>
+  <head>
+    <title>WorkMeOut</title>
+  </head>
+  <body>
+    <header>
+      <ul id="header-nav">
+      <li><h1>WorkMeOut</h1></li>
+      <li><h1><a href="/logout"> Logout</a></h1></li>
+      <li><h1><a href="/"> Home</a></h1></li>
+      </ul>
+    </header>
+    <!-- If Logged in, show torso -->
+<% if logged_in? %>
   <body style="background-image: url('assets/background-2.jpg');">
   <a id="workouts-link" href="/workouts"> View Your Workout </a>
-    <h1 id="bodypart-text"></h1>
-    <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
-
-    <%= image_tag "armedit3.png", :class => "arm-image" %>
-    <%= image_tag "rearlegedit.png", :class => "rear-leg-image" %>
-    <%= image_tag "front-leg-final.png", :class => "front-leg-image" %>
-
-  <!-- <div id="info">
-    <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> What we provide </h1>
-      <p style="color: red; text-align: center; font-family: 'Frijole'"> An innovative and efficient way for the user to learn about exercises </p>
-      <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> How to use?</h1>
-         <p style="color: red; text-align: center; font-family: 'Frijole'"> -Simply hover over the desired body part you wish to work out <br><br> -  Click on that body part<br><br> -Watch and Learn</p>
-  </div>
-   -->
-
-  <!-- div id="contactinfo">
-      <h1 style="color: red; text-align: center; font-family: 'Frijole', cursive;"> Contact </h1>
-          <p style="color: red; text-align: center; font-family: 'Frijole'"> Email: Isaac.Saqib@stonybrook.edu </p>
-          <p style="color: red; text-align: center; font-family: 'Frijole'">
-            <a style="text-decoration: none; color: red; text-align: center; font-family: 'Frijole'" href="https://www.github.com/isaacsaqib/Workout_App"> Github
-            </a>
-          </p>
-          <p style="color: red; text-align: center; font-family: 'Frijole'">
-            <a style="text-decoration: none; color: red; text-align: center; font-family: 'Frijole'" href="https://www.linkedin.com/pub/isaac-saqib/95/a84/905">LinkedIn
-            </a>
-          </p>
-  </div> -->
-
+  <h1 id="bodypart-text"></h1>
+  <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
+  <%= image_tag "armedit3.png", :class => "arm-image" %>
+  <%= image_tag "rearlegedit.png", :class => "rear-leg-image" %>
+  <%= image_tag "front-leg-final.png", :class => "front-leg-image" %>
+  <!-- Video Container -->
   <div style="background-image:url('assets/background-2.jpg');" id="videoContainer">
-    <ul id="ninja">
-
-    </ul>
   </div>
 
   <%= image_tag "torsoedit2.png", :class => "torso" %>
-    <!-- Left chest -->
-
-    <div class="bodypart" id="Left-Chest">
-      <div id="left-chest-dot">
+<!-- Left chest -->
+  <div class="bodypart" id="Left-Chest">
+    <div id="left-chest-dot">
       <div class="dot"></div>
       <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Left-Chest</p>
     </div>
-    <!-- Right chest -->
-    <div class="bodypart" id="Right-Chest">
-
-      <div id="right-chest-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Right-Chest</p>
+  <p class="text-preview">Left-Chest</p>
+  </div>
+<!-- Right chest -->
+  <div class="bodypart" id="Right-Chest">
+  <div id="right-chest-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+  </div>
+  <p class="text-preview">Right-Chest</p>
+  </div>
+<!-- Abs -->
+  <div class="bodypart" id="Abdominals">
+  <div id="abdominals-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+  </div>
+  <p class="text-preview">Abdominals</p>
+  </div>
+<!-- Right arm -->
+  <div class="bodypart" id="Right-Arm">
+    <div id="right-arm-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+  </div>
+  <p class="text-preview">Right<br>Arm</p>
+  </div>
+<!-- Arm preview on hover -->
+  <div id="arm-image-preview-container">
+  <h1 style="text-align:center;">Arm</h1>
+  <%= image_tag "arm-preview.png", :id => "arm-preview-image" %>
+  </div>
+<!-- Left arm -->
+  <div class="bodypart" id="Left-Arm">
+    <div id="left-arm-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
     </div>
-    <!-- Abs -->
-    <div class="bodypart" id="Abdominals">
-      <div id="abdominals-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Abdominals</p>
-
+  <p class="text-preview">Left-Arm</p>
+  </div>
+<!-- Left leg -->
+  <div class="bodypart" id="Left-Leg">
+    <div id="left-leg-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
     </div>
-    <!-- Right arm -->
-    <div class="bodypart" id="Right-Arm">
-      <div id="right-arm-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Right<br>Arm</p>
-
-    </div>
-
-    <div id="arm-image-preview-container">
-    <h1 style="text-align:center;">Arm</h1>
-    <%= image_tag "arm-preview.png", :id => "arm-preview-image" %>
-    </div>
-
-
-    <!-- Left arm -->
-    <div class="bodypart" id="Left-Arm">
-      <div id="left-arm-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Left-Arm</p>
-
-    </div>
-
-    <!-- Left leg -->
-    <div class="bodypart" id="Left-Leg">
-      <div id="left-leg-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Left-Leg</p>
-    </div>
-    <!-- Right leg -->
-    <div class="bodypart" id="Right-Leg">
+  <p class="text-preview">Left-Leg</p>
+  </div>
+<!-- Right leg -->
+  <div class="bodypart" id="Right-Leg">
       <div id="right-leg-dot">
       <div class="dot"></div>
       <div class="pulse"></div>
       </div>
-      <p class="text-preview">Right-Leg</p>
+  <p class="text-preview">Right-Leg</p>
+  </div>
+  <!-- Leg preview on hover -->
+  <div id="leg-image-preview-container">
+  <h1 style="text-align:center;">Leg</h1>
+  <%= image_tag "leg-preview.png", :id => "leg-preview-image" %>
+  </div>
+<!-- Shoulder -->
+  <div class="bodypart" id="Shoulder">
+    <div id="shoulder-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
     </div>
+  <p class="text-preview">Shoulder</p>
+  </div>
+<!-- Bicep -->
+  <div class="bodypart" id="Bicep">
+    <div id="bicep-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Bicep</p>
+  </div>
+<!-- Tricep -->
+  <div class="bodypart" id="Tricep">
+    <div id="tricep-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Tricep</p>
+  </div>
+<!-- Forearm -->
+  <div class="bodypart" id="Forearm">
+    <div id="forearm-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">ForemArm</p>
+  </div>
+<!-- Quad -->
+  <div class="bodypart" id="Quad">
+    <div id="quad-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Quad</p>
+  </div>
+<!-- Tibialis -->
+  <div class="bodypart" id="Tibialis">
+    <div id="tibialis-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Tibialis</p>
+  </div>
+<!-- Hamstring -->
+  <div class="bodypart" id="Hamstring">
+    <div id="hamstring-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Hamstring</p>
+  </div>
+<!-- Calve -->
+  <div class="bodypart" id="Calve">
+    <div id="calf-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Calve</p>
+  </div>
+<!-- Right glute -->
+  <div class="bodypart" id="Right-Glute">
+    <div id="right-glute-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Right-Glute</p>
+  </div>
+<!-- Left glute  -->
+  <div class="bodypart" id="Left-Glute">
+    <div id="left-glute-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Left-Glute</p>
+  </div>
+<!-- Left lat -->
+  <div class="bodypart" id="Left-Lat">
+    <div id="left-lat-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Left-Lat</p>
+  </div>
+<!-- Right lat -->
+  <div class="bodypart" id="Right-Lat">
+    <div id="right-lat-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Right-Lat</p>
+  </div>
+<!-- Trapezius -->
+  <div class="bodypart" id="Trapezius">
+    <div id="trapezius-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Trapezius</p>
+  </div>
+<!-- Rhomboids -->
+  <div class="bodypart" id="Rhomboids">
+    <div id="rhomboids-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Rhomboids</p>
+  </div>
+  <!-- Lower Back -->
+  <div class="bodypart" id="Lower-Back">
+    <div id="lowerback-dot">
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    </div>
+  <p class="text-preview">Lower-Back</p>
+  </div>
 
-    <div id="leg-image-preview-container">
-    <h1 style="text-align:center;">Leg</h1>
-    <%= image_tag "leg-preview.png", :id => "leg-preview-image" %>
-    </div>
+  <h1 id="back-view">Back View</h1>
+  <img id="return" style="height:20px;width:20px;" src="assets/return.png">
 
-
-    <div class="bodypart" id="Shoulder">
-      <div id="shoulder-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Shoulder</p>
-    </div>
-    <!-- Bicep -->
-    <div class="bodypart" id="Bicep">
-      <div id="bicep-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Bicep</p>
-
-    </div>
-    <!-- Tricep -->
-    <div class="bodypart" id="Tricep">
-      <div id="tricep-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Tricep</p>
-
-    </div>
-    <!-- Forearm -->
-    <div class="bodypart" id="Forearm">
-      <div id="forearm-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">ForemArm</p>
-
-    </div>
-    <!-- Quad -->
-    <div class="bodypart" id="Quad">
-      <div id="quad-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Quad</p>
-    </div>
-    <!-- Tibialis -->
-    <div class="bodypart" id="Tibialis">
-      <div id="tibialis-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Tibialis</p>
-    </div>
-    <!-- Hamstring -->
-    <div class="bodypart" id="Hamstring">
-      <div id="hamstring-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Hamstring</p>
-    </div>
-    <!-- Calve -->
-    <div class="bodypart" id="Calve">
-      <div id="calf-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Calve</p>
-    </div>
-    <!-- Right glute -->
-    <div class="bodypart" id="Right-Glute">
-      <div id="right-glute-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Right-Glute</p>
-    </div>
-    <!-- Left glute  -->
-    <div class="bodypart" id="Left-Glute">
-      <div id="left-glute-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Left-Glute</p>
-    </div>
-    <!-- Left lat -->
-    <div class="bodypart" id="Left-Lat">
-      <div id="left-lat-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Left-Lat</p>
-    </div>
-    <!-- Right lat -->
-    <div class="bodypart" id="Right-Lat">
-      <div id="right-lat-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Right-Lat</p>
-    </div>
-
-    <div class="bodypart" id="Trapezius">
-      <div id="trapezius-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Trapezius</p>
-    </div>
-
-    <div class="bodypart" id="Rhomboids">
-      <div id="rhomboids-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Rhomboids</p>
-    </div>
-
-    <div class="bodypart" id="Lower-Back">
-      <div id="lowerback-dot">
-      <div class="dot"></div>
-      <div class="pulse"></div>
-      </div>
-      <p class="text-preview">Lower-Back</p>
-    </div>
-
-<!-- <h1 class="rear" id="back-view"> Back </h1> -->
-       <h1 id="back-view">Back View</h1>
-        <img id="return" style="height:20px;width:20px;" src="assets/return.png">
-
-      <h1 id="rear-leg-text"> Rear Leg </h1>
-        <img id="return-rear-leg" style="height:20px;width:20px;" src="assets/return.png">
-
-
-  </body>
+  <h1 id="rear-leg-text"> Rear Leg </h1>
+  <img id="return-rear-leg" style="height:20px;width:20px;" src="assets/return.png">
+</body>
 <% else %>
-
+<!-- Login or Signup Page -->
   <div id="info-box">
     <h1 style="text-align:center;">Welcome to Work Me Out</h1>
-    <p>Our mission is to provide the user with quick and efficient ways to organize their Workoutouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
+      <p>Our mission is to provide the user with quick and efficient ways to organize their Workoutouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
   </div>
-<div id="form-box-signup">
-      <h1 style="color:white; text-align:center;">Sign up.</h1>
-  <ul class="forms">
-     <li><%= form_for(@user) do |f| %></li>
-       <li><%= f.label(:name) %></li>
-         <li><%= f.text_field :name, class: "text-field" %></li>
-       <li><%= f.label(:email) %></li>
-         <li><%= f.text_field :email, class: "text-field"  %></li>
-       <li><%= f.label(:password) %></li>
-         <li><%= f.password_field :password, class: "text-field" %></li>
-       <li><%= f.label(:password_confirmation) %></li>
-         <li><%= f.password_field :password_confirmation, class: "text-field" %></li>
-      <input class="buttons" id="signup-button" type="submit" value="Sign up">
-    <% end %>
-  </ul>
-</div>
-
-
-<div id="form-box-login">
+  <!-- Signup Box -->
+  <div id="form-box-signup">
+    <h1 style="color:white; text-align:center;">Sign up.</h1>
+      <ul class="forms">
+        <li><%= form_for(@user) do |f| %></li>
+        <li><%= f.label(:name) %></li>
+        <li><%= f.text_field :name, class: "text-field" %></li>
+        <li><%= f.label(:email) %></li>
+        <li><%= f.text_field :email, class: "text-field"  %></li>
+        <li><%= f.label(:password) %></li>
+        <li><%= f.password_field :password, class: "text-field" %></li>
+        <li><%= f.label(:password_confirmation) %></li>
+        <li><%= f.password_field :password_confirmation, class: "text-field" %></li>
+        <input class="buttons" id="signup-button" type="submit" value="Sign up">
+        <% end %>
+      </ul>
+  </div>
+  <!--Login Box  -->
+  <div id="form-box-login">
     <h1 style="color:white; text-align:center;">Lets get started.</h1>
     <p> Time to get ripped. </p>
-  <ul class="forms">
-     <li><%= form_tag("/session", method: "post") do %></li>
-          <li><%= label_tag(:email) %></li>
-          <li><%= text_field_tag (:email) %></li>
-          <li><%= label_tag(:password) %></li>
-          <li><%= password_field_tag(:password) %></li>
-         <input class="buttons" id="login-button" type="submit" value="Log in">
-        <% end %>
-  </ul>
-  <br>
-  <p id="signup-trigger"> Click here to sign up </p>
-</div>
+    <ul class="forms">
+      <li><%= form_tag("/session", method: "post") do %></li>
+      <li><%= label_tag(:email) %></li>
+      <li><%= text_field_tag (:email) %></li>
+      <li><%= label_tag(:password) %></li>
+      <li><%= password_field_tag(:password) %></li>
+      <input class="buttons" id="login-button" type="submit" value="Log in">
+      <% end %>
+    </ul>
+    <br>
+    <p id="signup-trigger"> Click here to sign up </p>
+  </div>
 
-<% flash.each do |key, value| %>
-   <div class="flash"><p style="text-align:center; color:red;"><%= value %></p><br></div>
-<% end %>
-
+  <% flash.each do |key, value| %>
+  <div class="flash"><p style="text-align:center; color:red;"><%= value %></p><br></div>
+  <% end %>
 <%end%>
-
-
-
-
-<!-- <footer id="footer"> -->
-
-<!-- </footer> -->
-
 
 </body>
 </html>
