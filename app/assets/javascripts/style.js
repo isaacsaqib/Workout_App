@@ -353,6 +353,15 @@ $(document).ready(function(){
   });
 
   // YOUTUBE FUNCTION
+
+  // [N] changing this from making its own updates to just returning data...
+  // [X] -- remove the append
+  // [N] -- make it return data
+  // [N] ---- decide how to store and work with the data synchronously
+  // [X] handle dynamic search URL
+  // [X] -- save the abstract URL
+  // [X] -- handle query string parameters more conveniently
+
   var SEARCH_URL = "http://gdata.youtube.com/feeds/api/videos/";
 
   var defaultOptions = {
