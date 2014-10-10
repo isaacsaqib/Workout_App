@@ -24,7 +24,6 @@ class UsersController < ApplicationController
       format.html
       format.json { render :json => @users_workouts}
     end
-
   end
 
 
