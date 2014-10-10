@@ -1,9 +1,6 @@
 #Left-Lat {
-  /*height: 129px;*/
-  /*width: 65px;*/
   border-radius: 20px;
-  /*background-color: red;
-*/  position: absolute;
+  position: absolute;
   left: 624px;
   top: 320px;
   -webkit-transform: rotate(-17deg);
@@ -15,14 +12,10 @@
   cursor: pointer;
 }
 
-
-
 #Right-Lat {
-  /*height: 129px;*/
   width: 65px;
   border-radius: 20px;
-  /*background-color: red;
-*/  position: absolute;
+  position: absolute;
   right: 611px;
   top: 320px;
   -webkit-transform: rotate(13deg);
@@ -36,48 +29,34 @@
 
 
 #Lower-Back {
-  /*height: 100px;*/
-  /*width: 100px;*/
   position: absolute;
   bottom: 241px;
   right: 659px;
-  /*background-color: red;
-*/  opacity: .7;
+  opacity: .7;
   border-radius: 41px;
 }
 
 #Lower-Back:hover {
   opacity: 1;
   cursor: pointer;
-
 }
 
 #Rhomboids {
-  /*width: 0;*/
-  /*height: 0;*/
-  /*border-left: 76px solid transparent;*/
-  /*border-right: 70px solid transparent;*/
-  /*border-top: 133px solid red;*/
   position: absolute;
   top: 290px;
   left: 650px;
   border-radius: 20px;
   opacity: .7;
-
 }
 
 #Rhomboids:hover {
   opacity: 1;
   cursor: pointer;
-
 }
 
 #Trapezius {
-  /*height: 50px;*/
-  /*width: 160px;*/
   opacity: .7;
-  /*background-color: red;
-*/  position: absolute;
+  position: absolute;
   top: 230px;
   right: 640px;
   border-radius: 30px;
@@ -88,4 +67,29 @@
   opacity: 1;
   cursor: pointer;
 }
+/*Glutes*/
+#Right-Glute {
+  opacity: .7;
+  position: absolute;
+  bottom: 120px;
+  right: 740px;
+  border-radius: 50px;
+}
 
+#Right-Glute:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#Left-Glute {
+  opacity: .7;
+  position: absolute;
+  bottom: 120px;
+  right: 718px;
+  border-radius: 50px;
+}
+
+#Left-Glute:hover {
+  opacity: 1;
+  cursor: pointer;
+}

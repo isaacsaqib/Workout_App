@@ -1,8 +1,5 @@
 #Right-Glute {
-  /*height: 131px;*/
-  /*width: 95px;*/
-/*  background-color: red;
-*/  opacity: .7;
+  opacity: .7;
   position: absolute;
   bottom: 120px;
   right: 740px;
@@ -15,10 +12,7 @@
 }
 
 #Left-Glute {
-  /*height: 131px;*/
-  /*width: 95px;*/
-/*  background-color: red;
-*/  opacity: .7;
+  opacity: .7;
   position: absolute;
   bottom: 120px;
   right: 718px;
