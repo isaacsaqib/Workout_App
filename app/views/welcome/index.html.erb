@@ -4,14 +4,20 @@
 
   </head>
 <body>
-    <header>
+    <!-- <header>
+      <ul id="header-nav">
+        <li><h1>WorkMeOut</h1></li>
+        <li><h1><a href="/logout"> Logout</a></h1></li>
+      </ul>
+    </header> -->
+    <!-- If Logged in, show torso -->
+<% if logged_in? %>
+  <header>
       <ul id="header-nav">
         <li><h1>WorkMeOut</h1></li>
         <li><h1><a href="/logout"> Logout</a></h1></li>
       </ul>
     </header>
-    <!-- If Logged in, show torso -->
-<% if logged_in? %>
   <body style="background-image: url('assets/background-2.jpg');">
   <a id="workouts-link" href="/workouts"> View Your Workout </a>
   <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
