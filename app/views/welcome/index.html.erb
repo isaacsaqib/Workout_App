@@ -3,23 +3,26 @@
     <title>Welcome to WorkMeOut!</title>
 
   </head>
-<body>
-    <!-- <header>
-      <ul id="header-nav">
-        <li><h1>WorkMeOut</h1></li>
-        <li><h1><a href="/logout"> Logout</a></h1></li>
-      </ul>
-    </header> -->
-    <!-- If Logged in, show torso -->
-<% if logged_in? %>
-  <header>
+<body style="background-image: url('assets/background-2.jpg');">
+    <header>
       <ul id="header-nav">
         <li><h1>WorkMeOut</h1></li>
         <li><h1><a href="/logout"> Logout</a></h1></li>
       </ul>
     </header>
-  <body style="background-image: url('assets/background-2.jpg');">
+    <!-- If Logged in, show torso -->
+ <!--  <header>
+      <ul id="header-nav">
+        <li><h1>WorkMeOut</h1></li>
+        <li><h1><a href="/logout"> Logout</a></h1></li>
+      </ul>
+    </header> -->
+<% if logged_in? %>
   <a id="workouts-link" href="/workouts"> View Your Workout </a>
+<% else %>
+  <a id="sign-up-link">Click here to start adding workouts!</a>
+<% end %>
+
   <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
   <%= image_tag "armedit3.png", :class => "arm-image" %>
   <%= image_tag "rearlegedit.png", :class => "rear-leg-image" %>
@@ -221,13 +224,16 @@
 
   <h1 id="rear-leg-text"> Rear Leg </h1>
   <img id="return-rear-leg" style="height:20px;width:20px;" src="assets/return.png">
-</body>
-<% else %>
 <!-- Login or Signup Page -->
   <div id="info-box">
     <h1 style="text-align:center;">Welcome to Work Me Out</h1>
-      <p>Our mission is to provide the user with quick and efficient ways to organize their Workoutouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
+      <p>Our mission is to provide the user with quick and efficient ways to organize their Workouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
+      <h1><a class="buttons" id="enter">Enter</a></h1>
   </div>
+
+
+
+
   <!-- Signup Box -->
   <div id="form-box-signup">
     <h1 style="color:white; text-align:center;">Sign up.</h1>
@@ -246,7 +252,7 @@
       </ul>
   </div>
   <!--Login Box  -->
-  <div id="form-box-login">
+ <div id="form-box-login">
     <h1 style="color:white; text-align:center;">Lets get started.</h1>
     <p> Time to get ripped. </p>
     <ul class="forms">
@@ -265,7 +271,6 @@
   <% flash.each do |key, value| %>
   <div class="flash"><p style="text-align:center; color:red;"><%= value %></p><br></div>
   <% end %>
-<%end%>
 
 
 </body>

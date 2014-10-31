@@ -153,6 +153,23 @@ iframe:hover {
 
 #workouts-link:hover {
   color: red;
+  cursor: pointer;
+}
+
+#sign-up-link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: 'Oswald';
+  background-color: rgba(255, 255, 255, .5);
+}
+
+#sign-up-link:hover {
+  color:red;
+  cursor: pointer;
 }
 
 .flash {
@@ -222,13 +239,21 @@ iframe:hover {
 
 #info-box h1 {
     font-family: Ultimate-Midnight;
+    text-align: center;
+    margin-top: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+#info-box h1:hover {
+  cursor: pointer;
 }
 
 #info-box p {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
+    color: black;
 }
-
 
 .buttons {
   color: white;

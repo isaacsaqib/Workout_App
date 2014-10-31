@@ -5,11 +5,59 @@ $(document).ready(function(){
   $("#leg-image-preview-container").hide();
   $("#arm-image-preview-container").hide();
   $("#return-rear-leg").hide();
+  $(".torso").hide();
+  $("#workouts-link").hide();
+  $("#sign-up-link").hide();
+  $("#back-view").hide();
+  $("#return").hide();
+  $("#Left-Chest").hide();
+  $("#Right-Chest").hide();
+  $("#Left-Arm").hide();
+  $("#Right-Arm").hide();
+  $("#Right-Leg").hide();
+  $("#Left-Leg").hide();
+  $("#Abdominals").hide();
+  $("#header-nav").hide();
+  $("#form-box-signup").hide();
+  $("#form-box-login").hide();
+
 
 // If mobile device is in portrait mode
  if(window.innerHeight > window.innerWidth){
     alert("Please rotate your mobile device to view this page!");
   }
+
+  $("#enter").on("click", function(){
+    $("#info-box").hide();
+    $("#header-nav").fadeIn();
+    $(".torso").fadeIn();
+    $("#Left-Chest").fadeIn();
+    $("#Right-Chest").fadeIn();
+    $("#Left-Arm").fadeIn();
+    $("#Right-Arm").fadeIn();
+    $("#Right-Leg").fadeIn();
+    $("#Left-Leg").fadeIn();
+    $("#Abdominals").fadeIn();
+    $("#sign-up-link").fadeIn();
+    $("#back-view").fadeIn();
+    $("#return").fadeIn();
+  });
+
+  $("#sign-up-link").on("click", function(){
+    $("#sign-up-link").hide();
+    $(".torso").hide();
+    $("#back-view").hide();
+    $("#return").hide();
+    $("#Left-Chest").hide();
+    $("#Right-Chest").hide();
+    $("#Left-Arm").hide();
+    $("#Right-Arm").hide();
+    $("#Right-Leg").hide();
+    $("#Left-Leg").hide();
+    $("#Abdominals").hide();
+    // $("#form-box-signup").fadeIn();
+    $("#form-box-login").fadeIn();
+  })
   // If user wants to sign up
   $("#signup-trigger").on("click", function(){
     $("#form-box-login").fadeOut();
