@@ -871,7 +871,7 @@ left: 687px;
 @media only screen and (max-width: 600px) {
 
   #info-box {
-  height: 100px;
+  height: 115px;
   width: 400px;
   margin-top: 10px;
   }
@@ -883,6 +883,11 @@ left: 687px;
 
   #info-box p {
     font-size: 10px;
+  }
+
+  #enter.buttons {
+    padding: 0px 10px 0px 10px;
+    font-size: 11px;
   }
 }
 

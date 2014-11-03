@@ -15,7 +15,7 @@
 # gem 'pg'
 #
 default: &default
-  adapter: PostgreSQL
+  adapter: postgresql
   timeout:  5000
   pool: 5
   # For details on connection pooling, see rails configuration guide

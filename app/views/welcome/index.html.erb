@@ -7,7 +7,9 @@
     <header>
       <ul id="header-nav">
         <li><h1>WorkMeOut</h1></li>
+    <% if logged_in? %>
         <li><h1><a href="/logout"> Logout</a></h1></li>
+    <% end %>
       </ul>
     </header>
     <!-- If Logged in, show torso -->
