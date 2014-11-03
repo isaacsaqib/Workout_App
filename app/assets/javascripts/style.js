@@ -28,6 +28,7 @@ $(document).ready(function(){
   }
 
   $("#enter").on("click", function(){
+    $("#body").css("background-image", "url('assets/background-2.jpg')");
     $("#info-box").hide();
     $("#header-nav").fadeIn();
     $(".torso").fadeIn();

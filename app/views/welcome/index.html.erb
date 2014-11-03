@@ -1,17 +1,26 @@
 <html>
   <head>
     <title>Welcome to WorkMeOut!</title>
-
   </head>
-<body style="background-image: url('assets/background-2.jpg');">
+    <body id="body" style="background-image: url("http://functionalathletics.com/images/background_3.jpg");">
+
     <header>
       <ul id="header-nav">
         <li><h1>WorkMeOut</h1></li>
     <% if logged_in? %>
-        <li><h1><a href="/logout"> Logout</a></h1></li>
+        <li><h1><a href="/logout">Logout</a></h1></li>
     <% end %>
       </ul>
     </header>
+
+  <div id="info-box">
+    <h1 style="text-align:center;">Welcome to Work Me Out</h1>
+      <p>Our mission is to provide the user with quick and efficient ways to organize their Workouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
+      <h1><a class="buttons" id="enter">Enter</a></h1>
+  </div>
+
+
+
     <!-- If Logged in, show torso -->
  <!--  <header>
       <ul id="header-nav">
@@ -227,12 +236,6 @@
   <h1 id="rear-leg-text"> Rear Leg </h1>
   <img id="return-rear-leg" style="height:20px;width:20px;" src="assets/return.png">
 <!-- Login or Signup Page -->
-  <div id="info-box">
-    <h1 style="text-align:center;">Welcome to Work Me Out</h1>
-      <p>Our mission is to provide the user with quick and efficient ways to organize their Workouts. By utilizing the Youtube Database, we have created a stunning view for the user to experience a revolutionary way of exploring exercises. Sign up to find out more!</p>
-      <h1><a class="buttons" id="enter">Enter</a></h1>
-  </div>
-
 
 
 
