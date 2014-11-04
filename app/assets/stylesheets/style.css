@@ -54,8 +54,6 @@ iframe:hover {
   width: 460px;
 }
 
-
-
  /*IMAGES CSS*/
 
 .rear-torso-image {
@@ -67,7 +65,6 @@ iframe:hover {
   display: block;
   margin: 0 auto;
 }
-
 
 #arm-image-preview-container {
   background-color:white;
@@ -86,7 +83,6 @@ iframe:hover {
   width: 110px;
   margin: 0 auto;
 }
-
 
 #leg-image-preview-container {
   background-color:white;
@@ -107,21 +103,19 @@ iframe:hover {
 }
   /*IMAGES END*/
 
-
 #header-nav {
+  background-color: white;
   margin: 0px;
   text-align: center;
-  /*margin-right: 130px;*/
+  padding: 0px;
 }
 
 #header-nav li {
   display: inline-block;
-  margin: 10px;
+  margin: 5px;
   border: 5px solid black;
   padding: 5px;
-  text-align: center;
   font-family: "Poiret One";
-
 }
 
 #header-nav h1 {

@@ -4,30 +4,18 @@
   </head>
     <body id="body" style="background-image: url('http://functionalathletics.com/images/background_3.jpg');">
 
-    <header>
       <ul id="header-nav">
         <li><h1>WorkMeOut</h1></li>
     <% if logged_in? %>
         <li><h1><a href="/logout">Logout</a></h1></li>
     <% end %>
       </ul>
-    </header>
 
-
-
-
-    <!-- If Logged in, show torso -->
- <!--  <header>
-      <ul id="header-nav">
-        <li><h1>WorkMeOut</h1></li>
-        <li><h1><a href="/logout"> Logout</a></h1></li>
-      </ul>
-    </header> -->
-<% if logged_in? %>
-  <a id="workouts-link" href="/workouts"> View Your Workout </a>
-<% else %>
-  <a id="sign-up-link">Click here to start adding workouts!</a>
-<% end %>
+    <% if logged_in? %>
+      <a id="workouts-link" href="/workouts"> View Your Workout </a>
+    <% else %>
+      <a id="sign-up-link">Click here to start adding workouts!</a>
+    <% end %>
 
   <%= image_tag "reartorso.png", :class => "rear-torso-image" %>
   <%= image_tag "armedit3.png", :class => "arm-image" %>
