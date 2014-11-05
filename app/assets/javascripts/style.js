@@ -431,8 +431,8 @@ $(document).ready(function(){
     $.getJSON(SEARCH_URL, data).done(function(data) {
       data.data.items.forEach(function(link) { //Finding link
         var newLink = link.player.default.replace("watch?v=", "embed/").replace("&feature=youtube_gdata_player", "").replace("http:", ""); //Replacing strands to fit embedding string
-        var iframe = $("<iframe>").attr("src", newLink).attr("width", 360).attr("height", 215); //iframe style
-        var button = $("<button>Add to your Workout</button><br>").attr("id", newLink).css("margin", "0 auto").css("display", "block"); //Add to workout button
+        var iframe = $("<iframe>").attr("src", newLink).attr("class", "iframe-video"); //iframe style
+        var button = $("<button>Add to your Workout</button><br>").attr("id", newLink).attr("class", "video-button") //Add to workout button
         element.append(iframe); //Append iframe to element(videoContainer)
         element.append(button);
       });
